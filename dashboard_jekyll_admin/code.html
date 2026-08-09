@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jekyll CMS - Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#1c1b1b",
+                      "surface-container-high": "#ebe7e7",
+                      "on-surface-variant": "#4c4546",
+                      "on-primary-fixed": "#1b1b1b",
+                      "inverse-on-surface": "#f3f0ef",
+                      "secondary-fixed": "#e1e3e4",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-bright": "#fcf9f8",
+                      "surface-container": "#f0edec",
+                      "on-secondary-fixed-variant": "#454748",
+                      "on-tertiary-fixed-variant": "#5e289b",
+                      "on-error": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#c5c7c8",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "outline-variant": "#cfc4c5",
+                      "on-primary-container": "#848484",
+                      "on-tertiary-container": "#9e6ade",
+                      "surface": "#fcf9f8",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#000000",
+                      "secondary-container": "#e1e3e4",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#313030",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#474747",
+                      "primary": "#000000",
+                      "on-tertiary-fixed": "#2a0053",
+                      "tertiary-fixed": "#eedbff",
+                      "tertiary-fixed-dim": "#dab9ff",
+                      "primary-container": "#1b1b1b",
+                      "primary-fixed": "#e2e2e2",
+                      "background": "#fcf9f8",
+                      "inverse-primary": "#c6c6c6",
+                      "surface-variant": "#e5e2e1",
+                      "on-background": "#1c1b1b",
+                      "on-secondary-fixed": "#191c1d",
+                      "secondary": "#5c5f60",
+                      "surface-tint": "#5e5e5e",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "tertiary-container": "#2a0053",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-secondary-container": "#626566",
+                      "outline": "#7e7576"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "48px",
+                      "lg": "24px",
+                      "sm": "8px",
+                      "unit": "4px",
+                      "gutter": "16px",
+                      "xs": "4px",
+                      "container-margin": "24px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Open Sans"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Open Sans"
+                      ],
+                      "code": [
+                              "Courier Prime"
+                      ],
+                      "body-lg": [
+                              "Open Sans"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "code": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+             font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background flex min-h-screen font-body-md text-body-md antialiased">
+<!-- SideNavBar -->
+<nav aria-label="Sidebar" class="h-screen w-64 fixed left-0 top-0 border-r border-outline-variant bg-surface-container-low flex flex-col p-md z-40 hidden md:flex">
+<!-- Header -->
+<div class="mb-lg">
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Admin Panel</h1>
+<p class="font-label-md text-label-md text-secondary mt-xs">Jekyll CMS</p>
+</div>
+<!-- CTA -->
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md uppercase py-sm px-md mb-lg rounded-none hover:bg-on-surface-variant transition-colors flex items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+            New Project
+        </button>
+<!-- Navigation Links -->
+<ul class="flex flex-col gap-unit flex-1">
+<!-- Inactive Tab: Dashboard -->
+<li>
+<a class="flex items-center gap-sm px-sm py-xs text-secondary hover:bg-surface-container-highest transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+</li>
+<!-- Active Tab: Posts -->
+<li>
+<a aria-current="page" class="flex items-center gap-sm px-sm py-xs bg-primary text-on-primary font-bold translate-x-1 transition-transform rounded" href="#">
+<span class="material-symbols-outlined icon-fill" data-icon="edit_document">edit_document</span>
+<span class="font-label-md text-label-md">Posts</span>
+</a>
+</li>
+<!-- Inactive Tab: Categories -->
+<li>
+<a class="flex items-center gap-sm px-sm py-xs text-secondary hover:bg-surface-container-highest transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-label-md text-label-md">Categories</span>
+</a>
+</li>
+<!-- Inactive Tab: Settings -->
+<li>
+<a class="flex items-center gap-sm px-sm py-xs text-secondary hover:bg-surface-container-highest transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</li>
+</ul>
+<!-- Footer Tab -->
+<div class="mt-auto border-t border-outline-variant pt-sm">
+<a class="flex items-center gap-sm px-sm py-xs text-secondary hover:bg-surface-container-highest transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-label-md text-label-md">Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 p-container-margin w-full overflow-x-hidden">
+<!-- Top Bar / Header -->
+<header class="flex justify-between items-center mb-xl border-b border-outline-variant pb-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Posts Library</h2>
+<p class="text-secondary mt-xs font-body-md text-body-md">Manage and organize your portfolio projects.</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase py-sm px-lg rounded-none hover:bg-on-surface-variant transition-colors">
+                New Post
+            </button>
+</header>
+<!-- Stats Widgets -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md mb-xl">
+<div class="bg-surface border border-outline-variant p-lg rounded-none">
+<p class="font-label-md text-label-md text-secondary uppercase mb-sm">Total Projects</p>
+<p class="font-display-lg text-display-lg text-on-surface">142</p>
+</div>
+<div class="bg-surface border border-outline-variant p-lg rounded-none">
+<p class="font-label-md text-label-md text-secondary uppercase mb-sm">Active Categories</p>
+<p class="font-display-lg text-display-lg text-on-surface">8</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant p-lg rounded-none flex items-center justify-center border-dashed">
+<p class="font-label-md text-label-md text-secondary flex items-center gap-xs cursor-pointer hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="add_chart">add_chart</span>
+                    Add Widget
+                 </p>
+</div>
+</div>
+<!-- Data Table -->
+<div class="bg-surface border border-outline-variant rounded-none overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container-low border-b border-outline-variant">
+<tr>
+<th class="py-md px-md font-label-md text-label-md text-secondary uppercase font-semibold">Title</th>
+<th class="py-md px-md font-label-md text-label-md text-secondary uppercase font-semibold">Category</th>
+<th class="py-md px-md font-label-md text-label-md text-secondary uppercase font-semibold">Date</th>
+<th class="py-md px-md font-label-md text-label-md text-secondary uppercase font-semibold">Status</th>
+<th class="py-md px-md font-label-md text-label-md text-secondary uppercase font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-md px-md">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-surface-variant flex-shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="A close-up shot of a modern, geometric bronze sculpture in a brightly lit gallery space, highlighting its rough texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwZoGDsbSdCcOYwroQZsS-oAw1MjgKkDWtEzR-I_tWTQMwRlu3oF1ePArlAgu8stre-30ohzT60_vNcpXeYZu8QgUPqMvVjdyL8s0gb2bDWuzEgn8U7qANL7q4vOn5Nj07DXJjrDoVlXUobiQSl3roXhDSUXVEYsQrLYBvmEemKuHGGunrwkZgaOMbuGfdnpHTkahJ_WM58_3zg54k8jMfHbXsRFa4eMK4uLlVzFbBd8Bn1NpqmDSz"/>
+</div>
+<span class="font-headline-md text-[18px] text-on-surface font-semibold">Bronze Monolith</span>
+</div>
+</td>
+<td class="py-md px-md">
+<span class="inline-block bg-surface-container px-xs py-unit font-code text-code text-on-surface-variant border border-outline-variant rounded-none">#Metalwork</span>
+</td>
+<td class="py-md px-md font-body-md text-secondary">Oct 24, 2024</td>
+<td class="py-md px-md">
+<span class="flex items-center gap-unit text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Published</span>
+</span>
+</td>
+<td class="py-md px-md text-right">
+<button aria-label="Edit" class="text-secondary hover:text-primary transition-colors p-unit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button aria-label="Delete" class="text-secondary hover:text-error transition-colors p-unit ml-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-md px-md">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-surface-variant flex-shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="Abstract translucent resin artwork reflecting bright white studio lights in a minimalist environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw-KR_cPJmDySzwisS7mx8cJrEOO2iygaq--27-JRfmPhf-L0YbBMO21dWIdWFFy2sDDShoQ2w6X3VnJpr97h_Y_6WetVOFAy22oR1Jry0VRo1z3gyDt8KW5L5dpMIt9_QCe-Kt4MPchGqRG_3LBrpk7Rf0e7dGe1VNJfE10ZeC2OO4I6HvCOX46FtbzGNK-QNXuTzAFJLSIoqfiwaO8rErKsYvzAstIQoBLA1dN249t7-MWrjrtoM"/>
+</div>
+<span class="font-headline-md text-[18px] text-on-surface font-semibold">Resin Study 04</span>
+</div>
+</td>
+<td class="py-md px-md">
+<span class="inline-block bg-surface-container px-xs py-unit font-code text-code text-on-surface-variant border border-outline-variant rounded-none">#Resin</span>
+</td>
+<td class="py-md px-md font-body-md text-secondary">Oct 18, 2024</td>
+<td class="py-md px-md">
+<span class="flex items-center gap-unit text-secondary">
+<span class="w-2 h-2 rounded-full border border-secondary"></span>
+<span class="font-label-md text-label-md">Draft</span>
+</span>
+</td>
+<td class="py-md px-md text-right">
+<button aria-label="Edit" class="text-secondary hover:text-primary transition-colors p-unit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button aria-label="Delete" class="text-secondary hover:text-error transition-colors p-unit ml-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-md px-md">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 bg-surface-variant flex-shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all" data-alt="A meticulously crafted architectural model made of white plaster sitting on a dark minimal workstation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1xMK6xRL1HKSZawa5iWjgXxRTCmTGeOyc-HtOblqkd8o_2NJVzxJk9HJLLCZDSsHmU7Rn_UDPcEpAhiMfgQ1HqkK5V3RFD8frndiC6Srw1GJ3pk0wx8rec0MaFb5pxXCKMqDJGS7nBKZdZVMUlz22ov-aBwdXA-fMkOWODAb4OVCJqA-eGw4d5isSjmlrDtmL_ywlkqsgbGh_I1AS3ZWoIuMO8OYp14pdEb4n5JEameVm3SouVDK6"/>
+</div>
+<span class="font-headline-md text-[18px] text-on-surface font-semibold">Plaster Architecture</span>
+</div>
+</td>
+<td class="py-md px-md">
+<span class="inline-block bg-surface-container px-xs py-unit font-code text-code text-on-surface-variant border border-outline-variant rounded-none">#Clay</span>
+</td>
+<td class="py-md px-md font-body-md text-secondary">Sep 02, 2024</td>
+<td class="py-md px-md">
+<span class="flex items-center gap-unit text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md">Published</span>
+</span>
+</td>
+<td class="py-md px-md text-right">
+<button aria-label="Edit" class="text-secondary hover:text-primary transition-colors p-unit">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button aria-label="Delete" class="text-secondary hover:text-error transition-colors p-unit ml-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination (Utilitarian) -->
+<div class="bg-surface-container-lowest border-t border-outline-variant p-sm flex justify-between items-center px-md">
+<span class="font-label-md text-label-md text-secondary">Showing 1 to 3 of 142 entries</span>
+<div class="flex gap-sm">
+<button class="px-sm py-unit border border-outline-variant text-secondary font-label-md hover:bg-surface-container transition-colors disabled:opacity-50" disabled="">Prev</button>
+<button class="px-sm py-unit border border-outline-variant text-on-surface bg-surface font-label-md hover:bg-surface-container transition-colors">Next</button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

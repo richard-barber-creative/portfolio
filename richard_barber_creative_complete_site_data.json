@@ -1,0 +1,177 @@
+{
+  "projects": [
+    {
+      "project_id": "ihop-chicken",
+      "title": "IHop Chicken Location",
+      "slug": "ihop-chicken-location",
+      "category": "Commercial / Themed",
+      "client": "IHop",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_8f4ba39f8c2b4dfaa14f392ef2ab69c8~mv2.jpg/v1/fill/w_743,h_498,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IHop%20Chicken%20Location.jpg",
+      "main_image_alt_text": "A sculpted chicken mascot for an IHop restaurant location.",
+      "gallery_images": [
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_8f4ba39f8c2b4dfaa14f392ef2ab69c8~mv2.jpg/v1/fill/w_743,h_498,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IHop%20Chicken%20Location.jpg",
+          "alt_text": "IHop Chicken Mascot close up"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "giant-wasps",
+      "title": "Giant Wasps",
+      "slug": "giant-wasps",
+      "category": "Propmaking",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_9123ba55612e4c97a2b1c6254c92839a~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_9123ba55612e4c97a2b1c6254c92839a~mv2.jpg",
+      "main_image_alt_text": "Sculpted giant wasps",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/propmaking"
+    },
+    {
+      "project_id": "golden-carriage",
+      "title": "Golden Carriage",
+      "slug": "golden-carriage",
+      "category": "Theatre",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_9738e8c492364090b9309f7f41ec18f8~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_9738e8c492364090b9309f7f41ec18f8~mv2.jpg",
+      "main_image_alt_text": "Intricate golden carriage prop",
+      "gallery_images": [
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_816189099df545209eecb8e260ec8386~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_816189099df545209eecb8e260ec8386~mv2.jpg",
+          "alt_text": "Golden carriage side view"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/propmaking"
+    },
+    {
+      "project_id": "three-figures-bucket",
+      "title": "Three Figures with Bucket",
+      "slug": "three-figures-bucket",
+      "category": "Sculpture",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_22a13a9349b44cd2a7ab00f27b3ad993~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_22a13a9349b44cd2a7ab00f27b3ad993~mv2.jpg",
+      "main_image_alt_text": "Sculpture of three figures around a bucket",
+      "gallery_images": [
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_eacaf33edd014f37b4b230369658a7b9~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_eacaf33edd014f37b4b230369658a7b9~mv2.jpg",
+          "alt_text": "Three figures back view"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_ed542050800341c78ff2df8169c6988e~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_ed542050800341c78ff2df8169c6988e~mv2.jpg",
+          "alt_text": "Three figures angle view"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/art"
+    },
+    {
+      "project_id": "leaning-woman",
+      "title": "Leaning Woman",
+      "slug": "leaning-woman",
+      "category": "Sculpture",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_7a26c578670f49e4aa9a4c1d70ecce6c~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_7a26c578670f49e4aa9a4c1d70ecce6c~mv2.jpg",
+      "main_image_alt_text": "Modern sculpture of a woman leaning",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/art"
+    },
+    {
+      "project_id": "walrus-rider",
+      "title": "Geisha Riding Walrus",
+      "slug": "walrus-rider",
+      "category": "Sculpture",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_6714609687174de4828b08d4fb54145f~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_6714609687174de4828b08d4fb54145f~mv2.jpg",
+      "main_image_alt_text": "Large scale walrus and rider sculpture",
+      "gallery_images": [
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_e273a7084c0d4a49b4167792e593b32b~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_e273a7084c0d4a49b4167792e593b32b~mv2.jpg",
+          "alt_text": "Walrus sculpture under construction"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/art"
+    },
+    {
+      "project_id": "modern-brass-table",
+      "title": "Modern Brass Coffee Table",
+      "slug": "modern-brass-table",
+      "category": "Furniture",
+      "client": "Personal Project",
+      "description": "A detailed description of the project, materials, and creative process will be added here.",
+      "main_image_url": "https://static.wixstatic.com/media/6a6a3a_475957cfadb445fdb94f0bba71c588d2~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_475957cfadb445fdb94f0bba71c588d2~mv2.jpg",
+      "main_image_alt_text": "Modern brass and glass coffee table",
+      "gallery_images": [
+        {
+          "url": "https://static.wixstatic.com/media/6a6a3a_b3daed75807340afb39c4a53228861db~mv2.jpg/v1/fit/w_220,h_220,q_75,enc_avif,quality_auto/6a6a3a_b3daed75807340afb39c4a53228861db~mv2.jpg",
+          "alt_text": "Large brass sculptural table"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/furniture"
+    }
+  ],
+  "homepage": {
+    "hero_image_url": "https://static.wixstatic.com/media/6a6a3a_8f4ba39f8c2b4dfaa14f392ef2ab69c8~mv2.jpg/v1/fill/w_743,h_498,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IHop%20Chicken%20Location.jpg",
+    "hero_image_alt_text": "Giant chicken sculpture mascot",
+    "introductory_text": "Richard Barber Creative - Professional Propmaking, Sculpture, and Modelmaking portfolio."
+  },
+  "about_page": {
+    "title": "About Richard Barber",
+    "bio_text": "Richard Barber is a professional Prop Maker and Sculptor based in London, UK. With over 10 years of experience, he specializes in creating bespoke props and sculptures for the Theatre, Film, and TV industries. His work serves a diverse range of clients, from individual artists to major production companies.",
+    "profile_image_url": "null"
+  },
+  "contact_page": {
+    "title": "Contact",
+    "introductory_text": "Richard is available for commissions and collaborations. Please get in touch to discuss your project.",
+    "email_address": "richard@rbarbercreative.com",
+    "phone_number": "+44 (0) 7814 936 093",
+    "location": "London, UK"
+  },
+  "categories": [
+    "Commercial / Themed",
+    "Propmaking",
+    "Theatre",
+    "Sculpture",
+    "Furniture",
+    "Modelmaking"
+  ],
+  "ui_ux_directives": {
+    "overall_vibe": "Modern, clean, professional, with a creative and artistic feel. Prioritize high-quality imagery and ample white space. The design must be fundamentally mobile-first.",
+    "layout": "Design for mobile single-column layouts first. On larger screens, adapt to a responsive grid system. Use a single-page application feel with smooth scrolling sections.",
+    "typography": {
+      "headings": "Use a modern, bold, sans-serif font like Poppins, Montserrat, or Bebas Neue for high impact.",
+      "body": "Use a highly readable, clean sans-serif font like Lato, Open Sans, or Roboto for descriptions and general text."
+    },
+    "color_palettes": {
+      "light_mode": {
+        "primary_background": "#FFFFFF",
+        "secondary_background": "#F8F9FA",
+        "accent_color": "#000000",
+        "primary_text": "#212529",
+        "secondary_text": "#6C757D"
+      },
+      "dark_mode": {
+        "primary_background": "#121212",
+        "secondary_background": "#1E1E1E",
+        "accent_color": "#BB86FC",
+        "primary_text": "#E1E1E1",
+        "secondary_text": "#A0A0A0"
+      }
+    },
+    "components": {
+      "navigation": "Mobile-first: A sticky header with a clean logo on the left and a hamburger menu icon on the right. The hamburger icon must expand into a full-screen overlay or slide-out menu containing navigation links and the dark/light mode toggle. On desktop, the hamburger menu is replaced by inline navigation links.",
+      "portfolio_grid": "Mobile-first: A single-column list of project cards. Each card should be a large, full-width image with the title and category text below it. On desktop, this transitions to a masonry or clean grid layout. Project cards should have a subtle zoom or overlay effect on hover.",
+      "buttons": "Use large, thumb-friendly buttons with a slight border radius for primary actions (e.g., 'View Project', 'Contact'). Use ghost/outline buttons for secondary actions.",
+      "footer": "Minimal and clean footer with social media links, copyright information, and a repeat of the contact email."
+    },
+    "interactions": {
+      "page_transitions": "Use subtle fade-in or slide-up animations as content enters the viewport on scroll.",
+      "hover_states": "All interactive elements (links, buttons, portfolio cards) must have clear and smooth hover states. On mobile, these should be replaced with clear tap states.",
+      "dark_mode_toggle": "A smooth transition effect when switching between light and dark modes."
+    }
+  }
+}
