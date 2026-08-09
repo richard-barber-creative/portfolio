@@ -4,11 +4,14 @@
 }
 
 .project-hero__image {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  max-height: 65vh;
+  object-fit: contain;
+  background-color: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   margin-bottom: var(--space-lg);
+  cursor: pointer;
 }
 
 .project-meta {
