@@ -1,5 +1,5 @@
 # Generates one page per project listed in _data/portfolio.json at
-# /portfolio/<slug>/ using the post.html layout. Keeping the projects as
+# /work/<slug>/ using the post.html layout. Keeping the projects as
 # data (rather than individual markdown files) means the admin CRUD panel
 # only ever has to read/write a single JSON file to add, edit, or remove
 # a project.
@@ -14,7 +14,7 @@ module RichardBarberCreative
       process(@name)
       self.data = project.merge(
         "layout" => "post",
-        "permalink" => "/portfolio/#{project['slug']}/"
+        "permalink" => "/work/#{project['slug']}/"
       )
       self.content = ""
     end
@@ -36,7 +36,7 @@ module RichardBarberCreative
         next if project["slug"].to_s.empty?
 
         project["_gallery_start"] = flat_images.length
-        project_url = "/portfolio/#{project['slug']}/"
+        project_url = "/work/#{project['slug']}/"
 
         flat_images << {
           "src" => project["main_image_url"],

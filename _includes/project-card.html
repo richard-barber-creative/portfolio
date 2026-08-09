@@ -1,7 +1,7 @@
 {% comment %}
   Renders a single project card. Usage: {% include project-card.html project=project %}
 {% endcomment %}
-<a href="{{ '/portfolio/' | append: include.project.slug | append: '/' | relative_url }}" class="project-card reveal">
+<a href="{{ '/work/' | append: include.project.slug | append: '/' | relative_url }}" class="project-card reveal">
   <div class="project-card__image-wrap">
     <img class="project-card__image" src="{{ include.project.main_image_url | relative_url }}" alt="{{ include.project.main_image_alt_text }}" loading="lazy">
   </div>

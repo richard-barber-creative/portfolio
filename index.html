@@ -20,7 +20,7 @@ title: Portfolio
   <div class="category-pill-list">
     <a class="category-pill is-active" href="{{ '/' | relative_url }}">All</a>
     {% for cat in site.data.portfolio.categories %}
-    <a class="category-pill" href="{{ '/portfolio/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
+    <a class="category-pill" href="{{ '/work/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
     {% endfor %}
   </div>
 

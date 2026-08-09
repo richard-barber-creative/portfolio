@@ -9,7 +9,7 @@ layout: default
   <div class="category-pill-list">
     <a class="category-pill" href="{{ '/' | relative_url }}">All</a>
     {% for cat in site.data.portfolio.categories %}
-    <a class="category-pill {% if cat.slug == page.slug %}is-active{% endif %}" href="{{ '/portfolio/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
+    <a class="category-pill {% if cat.slug == page.slug %}is-active{% endif %}" href="{{ '/work/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
     {% endfor %}
   </div>
 

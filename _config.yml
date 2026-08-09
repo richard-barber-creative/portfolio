@@ -7,15 +7,14 @@ description: >-
   modelmaking portfolio. Bespoke props and sculptures for theatre, film,
   and TV, based in London, UK.
 author: Richard Barber
-email: richard@rbarbercreative.com
+email: rbarber.creative@gmail.com
 lang: en
 
-url: "https://richardbarber.github.io" # the base hostname & protocol, e.g. https://username.github.io
-baseurl: "" # subpath e.g. "/rbarbercreative" — set this to your repository name
-             # if this site is published at username.github.io/REPO-NAME.
-             # Leave it as "" only if this repo IS named username.github.io.
+url: "https://richard-barber-creative.github.io" # the base hostname & protocol
+baseurl: "/portfolio" # subpath — this site is published at
+                       # richard-barber-creative.github.io/portfolio
 
-repository: "" # e.g. "yourusername/rbarbercreative" — used by the admin panel
+repository: "richard-barber-creative/portfolio" # used by the admin panel
                 # to know which GitHub repo to write changes to.
 
 # ---------------------------------------------------------------------------
@@ -52,7 +51,7 @@ plugins:
 collections:
   categories:
     output: true
-    permalink: /portfolio/category/:slug/
+    permalink: /work/category/:slug/
 
 defaults:
   - scope:
