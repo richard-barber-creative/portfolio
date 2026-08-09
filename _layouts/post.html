@@ -1,38 +1,39 @@
 ---
 layout: default
 ---
-<article class="container project-hero">
-  <p class="eyebrow">{{ page.category }}</p>
-  <h1>{{ page.title }}</h1>
-
-  <dl class="project-meta">
-    <div class="project-meta__item">
-      <dt>Client</dt>
-      <dd>{{ page.client }}</dd>
+<article class="work-view">
+  <div class="work-view__top">
+    <div class="work-view__image-pane">
+      <img class="work-view__image" src="{{ page.main_image_url | relative_url }}" alt="{{ page.main_image_alt_text }}" data-lightbox-index="{{ page._gallery_start }}">
     </div>
-    <div class="project-meta__item">
-      <dt>Category</dt>
-      <dd>{{ page.category }}</dd>
+
+    <div class="work-view__info">
+      <p class="eyebrow">{{ page.category }}</p>
+      <h1 class="work-view__title">{{ page.title }}</h1>
+
+      <dl class="work-view__meta">
+        <div>
+          <dt>Client</dt>
+          <dd>{{ page.client }}</dd>
+        </div>
+      </dl>
+
+      <div class="work-view__description">
+        {{ content }}
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      </div>
+
+      <a class="btn btn-ghost work-view__back" href="{{ '/' | relative_url }}">&larr; Back to Portfolio</a>
     </div>
-  </dl>
-
-  <img class="project-hero__image" src="{{ page.main_image_url | relative_url }}" alt="{{ page.main_image_alt_text }}" data-lightbox-index="{{ page._gallery_start }}">
-
-  <div class="project-description">
-    {{ content }}
-    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
   </div>
 
   {% if page.gallery_images and page.gallery_images.size > 0 %}
-  <h2>Gallery</h2>
-  <div class="project-gallery">
+  <div class="work-view__gallery">
     {% for image in page.gallery_images %}
-    <img src="{{ image.url | relative_url }}" alt="{{ image.alt_text }}" loading="lazy" data-lightbox-index="{{ page._gallery_start | plus: forloop.index }}">
+    <button type="button" class="work-view__thumb" data-lightbox-index="{{ page._gallery_start | plus: forloop.index }}" aria-label="View photo {{ forloop.index | plus: 1 }}">
+      <img src="{{ image.url | replace: '.jpg', '-thumb.jpg' | relative_url }}" alt="{{ image.alt_text }}" loading="lazy">
+    </button>
     {% endfor %}
   </div>
   {% endif %}
-
-  <p style="margin-top: var(--space-xl);">
-    <a class="btn btn-ghost" href="{{ '/' | relative_url }}">&larr; Back to Portfolio</a>
-  </p>
 </article>
