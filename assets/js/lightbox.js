@@ -19,6 +19,8 @@
   var overlay = document.getElementById("lightbox");
   var imageEl = document.getElementById("lightbox-image");
   var projectEl = document.getElementById("lightbox-project");
+  var altEl = document.getElementById("lightbox-alt");
+  var counterEl = document.getElementById("lightbox-counter");
   var linkEl = document.getElementById("lightbox-link");
   var closeBtn = document.getElementById("lightbox-close");
   var prevBtn = document.getElementById("lightbox-prev");
@@ -27,12 +29,29 @@
   var currentIndex = 0;
   var lastFocused = null;
 
+  // Images from the same project sit contiguously in the flat list, so the
+  // photo's position "within its own project" is just how far it is from
+  // the nearest neighbour with a different project_url.
+  function projectRange(index) {
+    var url = images[index].project_url;
+    var start = index;
+    var end = index;
+    while (start > 0 && images[start - 1].project_url === url) start--;
+    while (end < images.length - 1 && images[end + 1].project_url === url) end++;
+    return { position: index - start + 1, count: end - start + 1 };
+  }
+
   function render() {
     var item = images[currentIndex];
     imageEl.src = withBase(item.src);
     imageEl.alt = item.alt || item.project_title || "";
     projectEl.textContent = item.project_title || "";
+    altEl.textContent = item.alt || "";
+    altEl.hidden = !item.alt || item.alt === item.project_title;
     linkEl.href = withBase(item.project_url);
+
+    var range = projectRange(currentIndex);
+    counterEl.textContent = range.count > 1 ? "Image " + range.position + " of " + range.count : "";
   }
 
   function open(index) {
