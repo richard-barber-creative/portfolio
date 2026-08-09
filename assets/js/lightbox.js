@@ -18,16 +18,18 @@
 
   var overlay = document.getElementById("lightbox");
   var imageEl = document.getElementById("lightbox-image");
+  var eyebrowEl = document.getElementById("lightbox-eyebrow");
   var projectEl = document.getElementById("lightbox-project");
   var altEl = document.getElementById("lightbox-alt");
-  var counterEl = document.getElementById("lightbox-counter");
   var linkEl = document.getElementById("lightbox-link");
+  var thumbsEl = document.getElementById("lightbox-thumbs");
   var closeBtn = document.getElementById("lightbox-close");
   var prevBtn = document.getElementById("lightbox-prev");
   var nextBtn = document.getElementById("lightbox-next");
 
   var currentIndex = 0;
   var lastFocused = null;
+  var thumbsRenderedFor = null;
 
   // Images from the same project sit contiguously in the flat list, so the
   // photo's position "within its own project" is just how far it is from
@@ -38,7 +40,35 @@
     var end = index;
     while (start > 0 && images[start - 1].project_url === url) start--;
     while (end < images.length - 1 && images[end + 1].project_url === url) end++;
-    return { position: index - start + 1, count: end - start + 1 };
+    return { start: start, end: end, position: index - start + 1, count: end - start + 1 };
+  }
+
+  function renderThumbs(range) {
+    if (thumbsRenderedFor === range.start) {
+      // Same project as last render: just move the active state, no rebuild.
+      thumbsEl.querySelectorAll(".lightbox__thumb").forEach(function (btn) {
+        var i = parseInt(btn.getAttribute("data-lightbox-index"), 10);
+        btn.classList.toggle("is-active", i === currentIndex);
+      });
+      return;
+    }
+    thumbsRenderedFor = range.start;
+    thumbsEl.innerHTML = "";
+    if (range.count <= 1) return;
+    for (var i = range.start; i <= range.end; i++) {
+      var item = images[i];
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lightbox__thumb" + (i === currentIndex ? " is-active" : "");
+      btn.setAttribute("data-lightbox-index", i);
+      btn.setAttribute("aria-label", "Show photo " + (i - range.start + 1) + " of " + range.count);
+      var img = document.createElement("img");
+      img.src = withBase(item.src);
+      img.alt = "";
+      img.loading = "lazy";
+      btn.appendChild(img);
+      thumbsEl.appendChild(btn);
+    }
   }
 
   function render() {
@@ -46,12 +76,13 @@
     imageEl.src = withBase(item.src);
     imageEl.alt = item.alt || item.project_title || "";
     projectEl.textContent = item.project_title || "";
-    altEl.textContent = item.alt || "";
-    altEl.hidden = !item.alt || item.alt === item.project_title;
+    altEl.textContent = item.project_description || item.alt || "";
     linkEl.href = withBase(item.project_url);
 
     var range = projectRange(currentIndex);
-    counterEl.textContent = range.count > 1 ? "Image " + range.position + " of " + range.count : "";
+    eyebrowEl.textContent = (item.project_category || "Richard Barber Creative") +
+      (range.count > 1 ? " — Image " + range.position + " of " + range.count : "");
+    renderThumbs(range);
   }
 
   function open(index) {
