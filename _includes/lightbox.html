@@ -1,19 +1,22 @@
 <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">&times;</button>
 
-  <div class="lightbox__frame">
-    <div class="lightbox__image-pane">
-      <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">&larr;</button>
-      <img class="lightbox__image" id="lightbox-image" src="" alt="">
-      <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">&rarr;</button>
+  <div class="lightbox__body">
+    <div class="lightbox__top">
+      <div class="lightbox__image-pane">
+        <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">&larr;</button>
+        <img class="lightbox__image" id="lightbox-image" src="" alt="">
+        <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">&rarr;</button>
+      </div>
+
+      <div class="lightbox__info">
+        <span class="lightbox__eyebrow" id="lightbox-eyebrow"></span>
+        <h3 class="lightbox__project" id="lightbox-project"></h3>
+        <p class="lightbox__alt" id="lightbox-alt"></p>
+        <a class="lightbox__link" id="lightbox-link" href="#">View Project &rarr;</a>
+      </div>
     </div>
 
-    <div class="lightbox__info">
-      <span class="lightbox__eyebrow">Richard Barber Creative</span>
-      <h3 class="lightbox__project" id="lightbox-project"></h3>
-      <p class="lightbox__alt" id="lightbox-alt"></p>
-      <a class="lightbox__link" id="lightbox-link" href="#">View Project &rarr;</a>
-      <span class="lightbox__counter" id="lightbox-counter"></span>
-    </div>
+    <div class="lightbox__thumbs" id="lightbox-thumbs"></div>
   </div>
 </div>

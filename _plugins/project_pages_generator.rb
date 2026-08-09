@@ -42,6 +42,8 @@ module RichardBarberCreative
           "src" => project["main_image_url"],
           "alt" => project["main_image_alt_text"],
           "project_title" => project["title"],
+          "project_category" => project["category"],
+          "project_description" => project["description"],
           "project_url" => project_url
         }
         (project["gallery_images"] || []).each do |img|
@@ -49,6 +51,8 @@ module RichardBarberCreative
             "src" => img["url"],
             "alt" => img["alt_text"],
             "project_title" => project["title"],
+            "project_category" => project["category"],
+            "project_description" => project["description"],
             "project_url" => project_url
           }
         end
