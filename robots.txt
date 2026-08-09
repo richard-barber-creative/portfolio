@@ -1,1 +1,1 @@
-Sitemap: https://richardbarber.github.io/sitemap.xml
+Sitemap: https://richard-barber-creative.github.io/portfolio/sitemap.xml
