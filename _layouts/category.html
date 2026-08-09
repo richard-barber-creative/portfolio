@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="container section project-hero">
+  <p class="eyebrow">Portfolio Category</p>
+  <h1>{{ page.name }}</h1>
+  {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+
+  <div class="category-pill-list">
+    <a class="category-pill" href="{{ '/' | relative_url }}">All</a>
+    {% for cat in site.data.portfolio.categories %}
+    <a class="category-pill {% if cat.slug == page.slug %}is-active{% endif %}" href="{{ '/portfolio/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
+    {% endfor %}
+  </div>
+
+  {% assign projects = site.data.portfolio.projects | where: "category_slug", page.slug %}
+  {% if projects.size > 0 %}
+  <div class="portfolio-grid">
+    {% for project in projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>No projects have been added to this category yet.</p>
+  {% endif %}
+</div>

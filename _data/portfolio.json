@@ -1,0 +1,1151 @@
+{
+  "projects": [
+    {
+      "project_id": "giant-gold-coin",
+      "title": "Giant Gold Coin",
+      "slug": "giant-gold-coin",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Barbican Exhibition",
+      "description": "Cnc-machined mdf, which was prepared and primed with red bole, gold-leafed and varnished by hand.",
+      "main_image_url": "/assets/images/giant-gold-coin-main.jpg",
+      "main_image_alt_text": "Barbican Gold Coin",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-end-4th-plinth-scaled-prospective-model",
+      "title": "‘The End’ 4th Plinth Scaled Prospective Model",
+      "slug": "the-end-4th-plinth-scaled-prospective-model",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Heather Phillipson",
+      "description": "Modelmaking, sculpting and spraying. I worked with another sculptor in liaison with the artist Heather Philipson to realise this presentation model for display along with other artist’s entries at The National Gallery in London. They were to be voted for by the public to determine which sculpture would be accepted. 'The End’ later won to be displayed full scale on Trafalgar Square’s 4th Plinth from March 2020 for two years.",
+      "main_image_url": "/assets/images/the-end-4th-plinth-scaled-prospective-model-main.jpg",
+      "main_image_alt_text": "4th Plinth Sculpture",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "aldi-big-top",
+      "title": "Aldi Big Top",
+      "slug": "aldi-big-top",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Christmas 2019 Campaign",
+      "description": "Worked within a team, fixing and preparing a large cnc-machined chemiwood base; laid up a composite negative mould and multiple positive fibreglass castings. These were fixed to ply and studding, and were bolted together by riggers at the film studio; We then painted the regular red and white stripes with emulsion paint, and the centre of the circus ring was thrown sand over PVA glue.",
+      "main_image_url": "/assets/images/aldi-big-top-main.jpg",
+      "main_image_alt_text": "Aldi Big Top Interior",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "painted-and-lacquered-aluminium-and-bronze-console",
+      "title": "Painted and lacquered Aluminium and Bronze Console",
+      "slug": "painted-and-lacquered-aluminium-and-bronze-console",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Prepared cast aluminium with 2 pac basecoat and lacquer. Chased and polished lacquered bronze.",
+      "main_image_url": "/assets/images/painted-and-lacquered-aluminium-and-bronze-console-main.jpg",
+      "main_image_alt_text": "Aluminium and Bronze Console",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "aragorn-lord-of-the-rings",
+      "title": "Aragorn – Lord of the Rings",
+      "slug": "aragorn-lord-of-the-rings",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Personal Project",
+      "description": "One third scale figure; Post sculpting and refinement, model making and casting. This included the various armour features and weapons. Silica rubber moulding and resin casting.",
+      "main_image_url": "/assets/images/aragorn-lord-of-the-rings-main.jpg",
+      "main_image_alt_text": "Aragorn",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "giant-wax-coin",
+      "title": "Giant Wax Coin",
+      "slug": "giant-wax-coin",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Barbican Exhibition",
+      "description": "Cnc-machined mdf, primed white, then micro-crystaline wax was applied and built up to give a translucent beeswax effect finish.",
+      "main_image_url": "/assets/images/giant-wax-coin-main.jpg",
+      "main_image_alt_text": "Barbican Wax Coin",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "bart-surf-bath-plug-float",
+      "title": "Bart Surf Bath-Plug Float",
+      "slug": "bart-surf-bath-plug-float",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "Hand sculpted from a single reference picture and turnaround reference. Matt Groening (the designer of the Simpsons) sent a fax commending the expression and vitality of the sculpture.",
+      "main_image_url": "/assets/images/bart-surf-bath-plug-float-main.jpg",
+      "main_image_alt_text": "Bart Surf Bath-Plug Float",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "beaten-steel-table",
+      "title": "Beaten Steel Table",
+      "slug": "beaten-steel-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Private Yacht Commission",
+      "description": "Hand beaten steel, tig welding, electroplated chrome, 2 pac lacquer.",
+      "main_image_url": "/assets/images/beaten-steel-table-main.jpg",
+      "main_image_alt_text": "Beaten Steel Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "hotwheels-cars",
+      "title": "Hotwheels Cars",
+      "slug": "hotwheels-cars",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Harrods Display",
+      "description": "Chemiwood, modelmaking, 2pac basecoat, metallic paint and lacquer. Produced in multiple colourways, including a version finished with vinyl stickers.",
+      "main_image_url": "/assets/images/hotwheels-cars-main.jpg",
+      "main_image_alt_text": "Blue HotWheels Car",
+      "gallery_images": [
+        {
+          "url": "/assets/images/hotwheels-cars-gallery-1.jpg",
+          "alt_text": "Green HotWheels Car"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "hieronymus-bosch-treeman",
+      "title": "Hieronymus Bosch Treeman",
+      "slug": "hieronymus-bosch-treeman",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "I sculpted the limbs of the tree features around a mig welded armature surrounding a large egg-shaped fibreglass body shell. Modelmaking was also involved with the various other features within the sculpture.",
+      "main_image_url": "/assets/images/hieronymus-bosch-treeman-main.jpg",
+      "main_image_alt_text": "Bosch Treeman",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "pill-dispenser",
+      "title": "Pill Dispenser",
+      "slug": "pill-dispenser",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Brave New World",
+      "description": "Various types of pill dispensers were constructed from laser cut, turned, and fabricated square-tubular brass and acrylic tubing. The brass was brazed and soldered and included fabricated mechanisms to dispense spherical pills when a brass spoon was introduced into the base of each tube.",
+      "main_image_url": "/assets/images/pill-dispenser-main.jpg",
+      "main_image_alt_text": "Brave New World",
+      "gallery_images": [
+        {
+          "url": "/assets/images/pill-dispenser-gallery-1.jpg",
+          "alt_text": "Brave New World"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "bronze-and-glass-tables-collection",
+      "title": "Bronze and Glass Tables Collection",
+      "slug": "bronze-and-glass-tables-collection",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Teamwork involving chased bronze, polishing, fixing to steel supports, with inlaid glazing. These were extremely heavy tables!",
+      "main_image_url": "/assets/images/bronze-and-glass-tables-collection-main.jpg",
+      "main_image_alt_text": "Bronze & glass Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "mulberry-catwalk-show-monsters",
+      "title": "Mulberry Catwalk Show Monsters",
+      "slug": "mulberry-catwalk-show-monsters",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Personal Project",
+      "description": "Polycarved various monsters, which were then coated in white latex paint. The surface texture was later drawn in by an artwoker with permanent markers.",
+      "main_image_url": "/assets/images/mulberry-catwalk-show-monsters-main.jpg",
+      "main_image_alt_text": "Burberry Monster",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "ct-scanner",
+      "title": "CT Scanner",
+      "slug": "ct-scanner",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "The Royals Series",
+      "description": "The bed, body and features were constructed from cnc machined mdf panels, prepared to fit a steel frame and movable top, which slides into the main CT scanner chamber. The timber and mdf chamber’s circular aperture was constructed from layered cnc machined chemiwood, which was then shaped and finished by hand. The whole thing was finished with 2pac paint.",
+      "main_image_url": "/assets/images/ct-scanner-main.jpg",
+      "main_image_alt_text": "CT Scanner (Workshop)",
+      "gallery_images": [
+        {
+          "url": "/assets/images/ct-scanner-gallery-1.jpg",
+          "alt_text": "CT Scanner (On Site)"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "creme-table",
+      "title": "Creme Table",
+      "slug": "creme-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Steel fame, prepared and polished, electroplated chrome, 2pac spray lacquered. Mdf sprayed with PU paint.",
+      "main_image_url": "/assets/images/creme-table-main.jpg",
+      "main_image_alt_text": "Creme Table",
+      "gallery_images": [
+        {
+          "url": "/assets/images/creme-table-gallery-1.jpg",
+          "alt_text": "Creme Table"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "curved-bathroom-seat-steel-plywood-upholstery",
+      "title": "Curved Bathroom Seat, Steel, Plywood, Upholstery",
+      "slug": "curved-bathroom-seat-steel-plywood-upholstery",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Tig welded steel square tubing, prepared and polished, electroplated chrome.",
+      "main_image_url": "/assets/images/curved-bathroom-seat-steel-plywood-upholstery-main.jpg",
+      "main_image_alt_text": "Curved Bathroom Seat",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "dam",
+      "title": "Dam",
+      "slug": "dam",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "Modelmaking, including mdf and various plastics and rocks.",
+      "main_image_url": "/assets/images/dam-main.jpg",
+      "main_image_alt_text": "Dam",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "dire-wolf-brooch",
+      "title": "Dire-Wolf brooch",
+      "slug": "dire-wolf-brooch",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Game of Thrones, HBO",
+      "description": "Multiple 3D-printed wolf's heads, prepared, chased and electroplated with silver, and hand painted. The eyes were made from cutting and shaping tiger's eye gemstones. Black acrylic was shaped and polished to resemble black diamonds.",
+      "main_image_url": "/assets/images/dire-wolf-brooch-main.jpg",
+      "main_image_alt_text": "Dire-Wolf Brooch",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "empire-leaves-chandelier",
+      "title": "Empire Leaves Chandelier",
+      "slug": "empire-leaves-chandelier",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Plywood base, surrounded by steel sheet, electroplated with copper, and prepared with pickling. 2 pac sprayed lacquer. Various types of electroplating was applied to finished and polished laser cut steel leaves, which were then 2 pac lacquered.",
+      "main_image_url": "/assets/images/empire-leaves-chandelier-main.jpg",
+      "main_image_alt_text": "Empire Leaves Chandelier",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "forensic-figures-the-tell-tale-heart",
+      "title": "Forensic Figures, The Tell-Tale Heart",
+      "slug": "forensic-figures-the-tell-tale-heart",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Harland Miller",
+      "description": "Articulated sponge mannequins, with cast hands and faces, positioned and clothed in Industrial white suits. These were then painted with 2 part resin, and then prepped and sprayed with 2 pac paint to resist outdoor elements.",
+      "main_image_url": "/assets/images/forensic-figures-the-tell-tale-heart-main.jpg",
+      "main_image_alt_text": "Forensic Figures",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "gold-marbled-quartz-table-gold-electroplated-steel",
+      "title": "Gold Marbled Quartz Table, Gold Electroplated Steel",
+      "slug": "gold-marbled-quartz-table-gold-electroplated-steel",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "I achieved the striated gold layered effect in the resin base by applying and building up many thin layers of transparent two part resin. I then applied and dragged ‘veins' of very fine gold dust within each wet layer, then waited for the surface to gel, before then applying the next layer. The resulting layered block routed and shaped to give a marbled quartz effect.",
+      "main_image_url": "/assets/images/gold-marbled-quartz-table-gold-electroplated-steel-main.jpg",
+      "main_image_alt_text": "Gold Marbled Quartz Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-golden-carriage",
+      "title": "The Golden Carriage",
+      "slug": "the-golden-carriage",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "The Royals",
+      "description": "Extensive sculpting of palm trees and various ornamental features, including moulding, casting, adapting and introducing these into and around the carriage. The large figurines and decorative facial door and window features were cnc machined, hand finished, added and blended in by use of modelmaking. Various features including helmets, swords and shields were dressed onto the carriage’s roof.",
+      "main_image_url": "/assets/images/the-golden-carriage-main.jpg",
+      "main_image_alt_text": "Golden Carriage (Workshop)",
+      "gallery_images": [
+        {
+          "url": "/assets/images/the-golden-carriage-gallery-1.jpg",
+          "alt_text": "Golden Carriage (Workshop)"
+        },
+        {
+          "url": "/assets/images/the-golden-carriage-gallery-2.jpg",
+          "alt_text": "Golden Carriage (On Location)"
+        },
+        {
+          "url": "/assets/images/the-golden-carriage-gallery-3.jpg",
+          "alt_text": "Golden Carriage (On Location)"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "golden-lamps",
+      "title": "Golden Lamps",
+      "slug": "golden-lamps",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "The Royals",
+      "description": "Construction and spraying with coloured lacquer of various components to simulate gold plating of the lamp props.",
+      "main_image_url": "/assets/images/golden-lamps-main.jpg",
+      "main_image_alt_text": "Golden Lamps The Royals",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "aged-beauty-graphite-large",
+      "title": "Aged Beauty – Graphite, Large",
+      "slug": "aged-beauty-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/aged-beauty-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Aged Beauty",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "body-builders-graphite-large",
+      "title": "Body Builders – Graphite, Large",
+      "slug": "body-builders-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/body-builders-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Body Builders",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "geisha-and-walrus-graphite-large",
+      "title": "Geisha and Walrus – Graphite, Large",
+      "slug": "geisha-and-walrus-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/geisha-and-walrus-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Geisha and Walrus",
+      "gallery_images": [
+        {
+          "url": "/assets/images/geisha-and-walrus-graphite-large-gallery-1.jpg",
+          "alt_text": "Graphite Geisha and Walrus"
+        },
+        {
+          "url": "/assets/images/geisha-and-walrus-graphite-large-gallery-2.jpg",
+          "alt_text": "Graphite Geisha and Walrus"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "goth-graphite-large",
+      "title": "Goth – Graphite, Large",
+      "slug": "goth-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/goth-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Goth",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "mother-and-children-graphite-large",
+      "title": "Mother and Children – Graphite, Large",
+      "slug": "mother-and-children-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/mother-and-children-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Mother and Children",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "raver-graphite-large",
+      "title": "Raver – Graphite, Large",
+      "slug": "raver-graphite-large",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "Cast from fibreglass, prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard.",
+      "main_image_url": "/assets/images/raver-graphite-large-main.jpg",
+      "main_image_alt_text": "Graphite Raver",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "hagrid-large-figurine",
+      "title": "Hagrid Large Figurine",
+      "slug": "hagrid-large-figurine",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Harry Potter and The Philosopher's Stone",
+      "description": "This figurine was based on the descriptions of Hagrid from the original book by JK Rowling. This was developed before the films became produced (we envisaged him as being really dynamic and 'giant-like'!). Post sculpt refinement, modelmaking of various accessories, moulding and casting, and placement on base, Cellulose spray and acrylic paint.",
+      "main_image_url": "/assets/images/hagrid-large-figurine-main.jpg",
+      "main_image_alt_text": "Hagrid",
+      "gallery_images": [
+        {
+          "url": "/assets/images/hagrid-large-figurine-gallery-1.jpg",
+          "alt_text": "Hagrid"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "miniature-scaled-trojan-chicken",
+      "title": "Miniature Scaled Trojan Chicken",
+      "slug": "miniature-scaled-trojan-chicken",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "IHOP Chicken Campaign",
+      "description": "The chicken’s body was initially loosely cnc-machined. Then with additional sculpting and modelmaking, the various feathers and fine features were added. At the set location (in Cyprus) I worked in liaison with the sculptors of the full scaled chicken, to achieve similar paint and feature effects.",
+      "main_image_url": "/assets/images/miniature-scaled-trojan-chicken-main.jpg",
+      "main_image_alt_text": "IHop Chicken (On Location)",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "julie-lights-glass-and-bronze",
+      "title": "Julie Lights, Glass and Bronze",
+      "slug": "julie-lights-glass-and-bronze",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Modelmaking, connecting steel, acrylic, glass and polished and lacquered cast bronze, with electrical wiring and LED’s.",
+      "main_image_url": "/assets/images/julie-lights-glass-and-bronze-main.jpg",
+      "main_image_alt_text": "Julie Lights",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "stained-and-lacquered-kidney-table",
+      "title": "Stained and Lacquered Kidney Table",
+      "slug": "stained-and-lacquered-kidney-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Shaped timber sheet, with traditional french polish staining, and PU basecoat and lacquer. Connected to prepared and lacquered steel frame.",
+      "main_image_url": "/assets/images/stained-and-lacquered-kidney-table-main.jpg",
+      "main_image_alt_text": "Kidney Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "lse-corner-sculpture",
+      "title": "LSE Corner Sculpture",
+      "slug": "lse-corner-sculpture",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Richard Wilson",
+      "description": "Very large gesmonite casting, cast from a silica rubber and fibreglass mould.",
+      "main_image_url": "/assets/images/lse-corner-sculpture-main.jpg",
+      "main_image_alt_text": "LSE corner sculpture",
+      "gallery_images": [
+        {
+          "url": "/assets/images/lse-corner-sculpture-gallery-1.jpg",
+          "alt_text": "LSE corner sculpture"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "big-fibreglass-domes-subterranean-display",
+      "title": "Big Fibreglass Domes (Subterranean Display)",
+      "slug": "big-fibreglass-domes-subterranean-display",
+      "category": "Environments & Scenics",
+      "category_slug": "environments-scenics",
+      "client": "Personal Project",
+      "description": "Preparation and waterproof priming the steelwork; Fibreglass connection of the dome sections to the steelwork; Fixing, aligning and filling multiple domes.",
+      "main_image_url": "/assets/images/big-fibreglass-domes-subterranean-display-main.jpg",
+      "main_image_alt_text": "Large Event Domes",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "large-field-array-exhibition",
+      "title": "Large Field Array Exhibition",
+      "slug": "large-field-array-exhibition",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "Large exhibition displaying various works of art, many of which I had worked on were included throughout.",
+      "main_image_url": "/assets/images/large-field-array-exhibition-main.jpg",
+      "main_image_alt_text": "Large Field Array Art Exhibition",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-pissing-dwarves-graphite",
+      "title": "Three Pissing Dwarves (Graphite)",
+      "slug": "three-pissing-dwarves-graphite",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Grotesques",
+      "description": "The larger clay dwarves sculptures were then moulded in silica rubber and fibreglass, and were then laid up in fibreglass with a black gel coat. These were then prepared and finished for application of a unique graphite added 2 pac spray paint. This had to be refined and worked back with wax to a gallery standard. A smaller maquette version was also produced: The maquettes were moulded in silica rubber and fibreglass and cast in black resin and gel coat, prepared and sprayed with a unique 2 pac paint containing graphite, to become works of art themselves.",
+      "main_image_url": "/assets/images/three-pissing-dwarves-graphite-main.jpg",
+      "main_image_alt_text": "Large Graphite Dwarves",
+      "gallery_images": [
+        {
+          "url": "/assets/images/three-pissing-dwarves-graphite-gallery-1.jpg",
+          "alt_text": "Large Graphite Dwarves"
+        },
+        {
+          "url": "/assets/images/three-pissing-dwarves-graphite-gallery-2.jpg",
+          "alt_text": "Large Graphite Dwarves"
+        },
+        {
+          "url": "/assets/images/three-pissing-dwarves-graphite-gallery-3.jpg",
+          "alt_text": "Graphite Dwarves Maquette.jpg"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "large-steel-console-silver-leafed",
+      "title": "Large Steel Console (Silver Leafed)",
+      "slug": "large-steel-console-silver-leafed",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Steel table frame prepared of silver-leafing, then sprayed with 2 pac lacquer",
+      "main_image_url": "/assets/images/large-steel-console-silver-leafed-main.jpg",
+      "main_image_alt_text": "Large Steel Console",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "legolas-lord-of-the-rings",
+      "title": "Legolas – Lord of the Rings",
+      "slug": "legolas-lord-of-the-rings",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Personal Project",
+      "description": "One third scale figure; Post sculpting and refinement, model making and casting. This included the various clothing features and weapons. Silica rubber moulding and resin casting.",
+      "main_image_url": "/assets/images/legolas-lord-of-the-rings-main.jpg",
+      "main_image_alt_text": "Legolas",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "london-bridge-dispaly",
+      "title": "London Bridge Dispaly",
+      "slug": "london-bridge-dispaly",
+      "category": "Environments & Scenics",
+      "category_slug": "environments-scenics",
+      "client": "For man-made Island display, Middle East",
+      "description": "Modelmaking; The walls, windows and and roof features were first constructed, then moulded and cast in fibreglass, and fitted around a steel-framed base.",
+      "main_image_url": "/assets/images/london-bridge-dispaly-main.jpg",
+      "main_image_alt_text": "London Bridge",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "metronome-tree",
+      "title": "Metronome Tree",
+      "slug": "metronome-tree",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "I firstly welded the whole armature from bent steel rod, then sculpted around this with poly-carved foam, fibreglass, filler and resin, mdf and wood veneer.",
+      "main_image_url": "/assets/images/metronome-tree-main.jpg",
+      "main_image_alt_text": "Metronome Tree",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "monster-wrestlers-hinged-collectors-box",
+      "title": "Monster Wrestlers Hinged Collectors Box",
+      "slug": "monster-wrestlers-hinged-collectors-box",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "‘Poly-Pocket’ style hinged box to house the collection of various monster wrestler sculpted figures. The skull was first sculpted and cast then vacuum-formed, and the head was then sculpted over this. The whole project involved model making and machining, sculpting, silicon moulding and resin casting, cellulose spraying and acrylic hand painting.",
+      "main_image_url": "/assets/images/monster-wrestlers-hinged-collectors-box-main.jpg",
+      "main_image_alt_text": "Monster Wrestlers",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "exploration-tree-interactive-museum-display",
+      "title": "Exploration Tree (Interactive Museum Display)",
+      "slug": "exploration-tree-interactive-museum-display",
+      "category": "Environments & Scenics",
+      "category_slug": "environments-scenics",
+      "client": "Personal Project",
+      "description": "I initially sculpted a smaller scaled tree in clay to be used as a measuring reference for the full sized tree. This was constructed from sheets of tree-textured fibreglass, which was embellished with poly-carved elements, which were filled and covered in fibreglass, sculpted filler and resin. These were all fitted around a large cylindrical steel frame, along with an internal ‘exploration’ tunnel. The project was later put together and artworked on site.",
+      "main_image_url": "/assets/images/exploration-tree-interactive-museum-display-main.jpg",
+      "main_image_alt_text": "Nature Exploration Tree",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "noddy-and-big-ears-in-their-vehicles",
+      "title": "Noddy and Big Ears in their vehicles",
+      "slug": "noddy-and-big-ears-in-their-vehicles",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "The cars were totally constructed using traditional model making skills by hand and with some turned parts. This was before cnc-machining was the more predominant method. Cellulose spray and acrylic hand painting.",
+      "main_image_url": "/assets/images/noddy-and-big-ears-in-their-vehicles-main.jpg",
+      "main_image_alt_text": "Noddy And Bigears",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "noddy-and-car",
+      "title": "Noddy and Car",
+      "slug": "noddy-and-car",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "Hand made using traditional model making techniques. Essentially the car was ‘sculpted’ from chemiwood and filler, then refined. Cellulose spray and acrylic hand painting.",
+      "main_image_url": "/assets/images/noddy-and-car-main.jpg",
+      "main_image_alt_text": "Noddy Car",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "policeman-criminal-and-police-car",
+      "title": "Policeman, Criminal and Police Car",
+      "slug": "policeman-criminal-and-police-car",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "Prototype toy vehicle with figures sculpts. Traditional modelmaking and adaptation, sculpting and cellulose paint.",
+      "main_image_url": "/assets/images/policeman-criminal-and-police-car-main.jpg",
+      "main_image_alt_text": "Policeman and Criminal",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "rio-cantilevered-chair-steel-and-leather",
+      "title": "Rio Cantilevered Chair, Steel and Leather",
+      "slug": "rio-cantilevered-chair-steel-and-leather",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "The Steelwork was prepared and finished with pickling, and stained and sprayed with 2 pac lacquer.",
+      "main_image_url": "/assets/images/rio-cantilevered-chair-steel-and-leather-main.jpg",
+      "main_image_alt_text": "Rio Cantilever Chair",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "rio-multi-levelled-table",
+      "title": "Rio Multi-Levelled Table",
+      "slug": "rio-multi-levelled-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Steel frame prepared and finished with pickling, then sprayed with 2 pac lacquer.",
+      "main_image_url": "/assets/images/rio-multi-levelled-table-main.jpg",
+      "main_image_alt_text": "Rio Multi Level Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "rock-fan",
+      "title": "Rock Fan",
+      "slug": "rock-fan",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "This third scaled figure was to sit upon a spiral staircase, so I firstly constructed a section of the staircase from mdf, then sculpted the figure in clay. This was later moulded then cast in fibreglass, and painted by hand.",
+      "main_image_url": "/assets/images/rock-fan-main.jpg",
+      "main_image_alt_text": "Rock Fan",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "sea-life",
+      "title": "Sea Life",
+      "slug": "sea-life",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "I mig welded the steel rod armature, then sculpted around this with poly-carved foam,fibreglass, filler and resin.",
+      "main_image_url": "/assets/images/sea-life-main.jpg",
+      "main_image_alt_text": "Sealife",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "sindy-doll-s-swan-carriage",
+      "title": "Sindy Doll’s Swan Carriage",
+      "slug": "sindy-doll-s-swan-carriage",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "Traditional model making, involving development of the wings, and all over sculpt refinement, cellulose spray.",
+      "main_image_url": "/assets/images/sindy-doll-s-swan-carriage-main.jpg",
+      "main_image_alt_text": "Sindy's Swan Carriage",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "cake-engine",
+      "title": "Cake Engine",
+      "slug": "cake-engine",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Skoda Fabia Advertisement",
+      "description": "Traditional model making with various materials; mould making and castings; rendered with sawdust; airbrushing.",
+      "main_image_url": "/assets/images/cake-engine-main.jpg",
+      "main_image_alt_text": "Skoda Cake Engine",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "overdrive-machine",
+      "title": "Overdrive Machine",
+      "slug": "overdrive-machine",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Sky Vegas Advertisement",
+      "description": "Chemiwood, acrylic, mdf, machined and hand grained brass. Interior electronics and 2pac spray.",
+      "main_image_url": "/assets/images/overdrive-machine-main.jpg",
+      "main_image_alt_text": "Sky Vegas Overdrive",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "squarepusher",
+      "title": "Squarepusher",
+      "slug": "squarepusher",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Keith Tyson - Large Field Array",
+      "description": "Modelmaking involving poly-carved foam, fibreglass, PVC piping, mdf and 2 pac paint.",
+      "main_image_url": "/assets/images/squarepusher-main.jpg",
+      "main_image_alt_text": "Squarepusher",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "steel-table-with-oak-legs",
+      "title": "Steel Table with Oak Legs",
+      "slug": "steel-table-with-oak-legs",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "The legs were comprised of provided turned oak 'end grain’ offcuts, which were then glued and clamped into identical columns. This meant that effectively the whole exterior surface of each leg should have a uniform realistic end grain pattern. This was further enhanced by hand painting more grain on, providing an overall effect. These were then stained and fixed to bases.",
+      "main_image_url": "/assets/images/steel-table-with-oak-legs-main.jpg",
+      "main_image_alt_text": "Steel & Oak Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "teeny-weeny-chapel-playset",
+      "title": "Teeny Weeny Chapel Playset",
+      "slug": "teeny-weeny-chapel-playset",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Teeny Weeny Collectables",
+      "description": "One of many different playsets in the teeny Weeny range, involving traditional model making and sculpting, and prototype production of tooling masters and painted samples for the toy industry. These were made before rapid prototyping with 3D printers and cnc-machining were predominant, where individual features and hinges were built around vacuum-formings, with extensive intricate model making.",
+      "main_image_url": "/assets/images/teeny-weeny-chapel-playset-main.jpg",
+      "main_image_alt_text": "Teeny Weenies chapel",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-grinch-whoville-town-hall-play-set",
+      "title": "The Grinch Whoville Town Hall Play Set",
+      "slug": "the-grinch-whoville-town-hall-play-set",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Composite Parts Building",
+      "description": "Various buildings in the Grinch collectables set were constructed using traditional model making techniques and machining skills. These were made up from multiple component parts, involving vacuum-forming, silica rubber moulding, casting in resin, and cellulose spraying and acrylic hand painting.",
+      "main_image_url": "/assets/images/the-grinch-whoville-town-hall-play-set-main.jpg",
+      "main_image_alt_text": "The Grinch Collectibles",
+      "gallery_images": [
+        {
+          "url": "/assets/images/the-grinch-whoville-town-hall-play-set-gallery-1.jpg",
+          "alt_text": "The Grinch Collectables"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-ice-queen-theatre-prop",
+      "title": "The Ice Queen (Theatre Prop)",
+      "slug": "the-ice-queen-theatre-prop",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Personal Project",
+      "description": "I sculpted this bust in clay of the actress performing in ‘The Ice Queen’ production, which was subsequently to be moulded and cast in fibreglass, so as to be vacuum formed in transparent acrylic and added to the body of an ‘ice sculpture’.",
+      "main_image_url": "/assets/images/the-ice-queen-theatre-prop-main.jpg",
+      "main_image_alt_text": "The Ice Queen",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-joker-tank",
+      "title": "The ‘Joker’ Tank",
+      "slug": "the-joker-tank",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Chernobyl, HBO",
+      "description": "The body and turret of the tank were fabricated in aluminium, chemiwood, and acrylic. Machining and model making of components and features. I sprayed the body and turret separately, along with all of the components, wheels and track.",
+      "main_image_url": "/assets/images/the-joker-tank-main.jpg",
+      "main_image_alt_text": "The Joker",
+      "gallery_images": [
+        {
+          "url": "/assets/images/the-joker-tank-gallery-1.jpg",
+          "alt_text": "The Joker"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "the-thinker-kerry-mucklowe",
+      "title": "The Thinker (Kerry Mucklowe)",
+      "slug": "the-thinker-kerry-mucklowe",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "This Country Series",
+      "description": "Cnc-machined chemiwood figure, mdf, ply-wood and chemiwood base. The figure was constructed by layering the chemiwood and refining by hand, including undercutting and defining and sculpting in detail. This was then 2 pac primed then sprayed with black paint, and hand painted with Bristol gold to achieve the bronzing effect.",
+      "main_image_url": "/assets/images/the-thinker-kerry-mucklowe-main.jpg",
+      "main_image_alt_text": "The Thinker (On Location)",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-legged-aluminium-stool-silver-leafed",
+      "title": "Three-Legged Aluminium Stool (Silver Leafed)",
+      "slug": "three-legged-aluminium-stool-silver-leafed",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "I first sculpted the two halves of a single leg in clay, which was then silica rubber moulded, then multiple casts were made in resin. These were then sent to the foundry for casting in aluminium. These were then finished and prepared for silver-leafing, then sprayed with 2 pac lacquer.",
+      "main_image_url": "/assets/images/three-legged-aluminium-stool-silver-leafed-main.jpg",
+      "main_image_alt_text": "Three Legged Stool",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-link-table-electroplated-bronze",
+      "title": "Three Link Table (Electroplated Bronze)",
+      "slug": "three-link-table-electroplated-bronze",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Teamwork involving steel preparation, tig welding, and preparing for electroplating, finishing, and 2 pac spray varnish",
+      "main_image_url": "/assets/images/three-link-table-electroplated-bronze-main.jpg",
+      "main_image_alt_text": "Three Links Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-link-table-silver-leafed",
+      "title": "Three Link Table (Silver Leafed)",
+      "slug": "three-link-table-silver-leafed",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Teamwork involving preparing the tig welded table links for silver-leafing, and finishing with 2 pac varnish.",
+      "main_image_url": "/assets/images/three-link-table-silver-leafed-main.jpg",
+      "main_image_alt_text": "Three Links Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-lions-bronze-and-smoked-glass-table",
+      "title": "Three Lions Bronze and Smoked Glass Table",
+      "slug": "three-lions-bronze-and-smoked-glass-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Bronze castings, chased and polished, then spray lacquered with 2 pac varnish.",
+      "main_image_url": "/assets/images/three-lions-bronze-and-smoked-glass-table-main.jpg",
+      "main_image_alt_text": "Three Lions Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "three-rings-table",
+      "title": "Three Rings Table",
+      "slug": "three-rings-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Prepared steel with gold-leaf, the outside surfaces were applied with pickling, worked up and spray lacquered with 2 pac varnish.",
+      "main_image_url": "/assets/images/three-rings-table-main.jpg",
+      "main_image_alt_text": "Three Rings Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "torpedo-fish-museum-display",
+      "title": "Torpedo Fish (Museum Display)",
+      "slug": "torpedo-fish-museum-display",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Personal Project",
+      "description": "I sculpted this electric ray around a revolvable steel armature, so as to more easily achieve both sides of the sculpture. This was later cast and painted for a museum display.",
+      "main_image_url": "/assets/images/torpedo-fish-museum-display-main.jpg",
+      "main_image_alt_text": "Torpedo Fish (Clay)",
+      "gallery_images": [
+        {
+          "url": "/assets/images/torpedo-fish-museum-display-gallery-1.jpg",
+          "alt_text": "Torpedo Fish (Fibreglass Casting)"
+        },
+        {
+          "url": "/assets/images/torpedo-fish-museum-display-gallery-2.jpg",
+          "alt_text": "Torpedo Fish (Fibreglass Casting)"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "glazed-umbrella-stand",
+      "title": "Glazed Umbrella Stand",
+      "slug": "glazed-umbrella-stand",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Steel and glass. The thin-sheet steel frame was prepared and polished for electroplating, and sprayed with 2 pac lacquer. Sheet glass was cut and to fit and fixed in.",
+      "main_image_url": "/assets/images/glazed-umbrella-stand-main.jpg",
+      "main_image_alt_text": "Umbrella Stand",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "stop-sign-machine",
+      "title": "Stop-Sign Machine",
+      "slug": "stop-sign-machine",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Virgin Trains Advertisement",
+      "description": "Fabricated and dressed with various industrial and found components. The pivoted sign had to be able to withstand hard hits, tripping an illuminated lamp feature.",
+      "main_image_url": "/assets/images/stop-sign-machine-main.jpg",
+      "main_image_alt_text": "Virgin Trains Stop Sign",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "giant-wasps",
+      "title": "Giant Wasps",
+      "slug": "giant-wasps",
+      "category": "Creatures & Characters",
+      "category_slug": "creatures-characters",
+      "client": "Rambert Dance Company",
+      "description": "I Welded the filigree with various thicknesses of thin steel rod. The translucent wings were achieved by laying up a layer of fibreglass felt with epoxy resin.",
+      "main_image_url": "/assets/images/giant-wasps-main.jpg",
+      "main_image_alt_text": "Wasps",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "ars-ne-wenger-bobbing-head-toy",
+      "title": "Arsène Wenger Bobbing-Head Toy",
+      "slug": "ars-ne-wenger-bobbing-head-toy",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Advertisement Prop",
+      "description": "An original ‘frowning' bobbing head toy of Arsène Wenger had to be modified to transform his expression into a ‘smiling' face. This was especially challenging as I could only find two a actual images of him smiling!",
+      "main_image_url": "/assets/images/ars-ne-wenger-bobbing-head-toy-main.jpg",
+      "main_image_alt_text": "Wenger Bobbing Head",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "wings-chair",
+      "title": "Wings Chair",
+      "slug": "wings-chair",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Big Brother Series",
+      "description": "Worked with another sculptor sculpting with clay on steel armature. This was later cast in fibreglass and gilded.",
+      "main_image_url": "/assets/images/wings-chair-main.jpg",
+      "main_image_alt_text": "Wings Chair",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "world-map-table",
+      "title": "World Map Table",
+      "slug": "world-map-table",
+      "category": "Props & Weapons",
+      "category_slug": "props-weapons",
+      "client": "Personal Project",
+      "description": "Prepared fibreglass and polished steel plate, sprayed with 2 pac base coat and lacquer.",
+      "main_image_url": "/assets/images/world-map-table-main.jpg",
+      "main_image_alt_text": "World Map Table",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "mini-footballer-head-and-body",
+      "title": "Mini-Footballer Head and Body",
+      "slug": "mini-footballer-head-and-body",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Corinthian Collectables",
+      "description": "Head sculpt from various references. Silica rubber moulding, resin casting, spraying and hand painting. Many such head and body figurines in various poses were moulded and cast; The Corinthian range is vast!",
+      "main_image_url": "/assets/images/mini-footballer-head-and-body-main.jpg",
+      "main_image_alt_text": "footballer head",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "scaled-m-m-figure-sign",
+      "title": "Scaled m&m Figure Sign",
+      "slug": "scaled-m-m-figure-sign",
+      "category": "Commercial & Themed",
+      "category_slug": "commercial-themed",
+      "client": "Personal Project",
+      "description": "Modelmaking, sculpting, sprayed celulose and acrylic hand paint.",
+      "main_image_url": "/assets/images/scaled-m-m-figure-sign-main.jpg",
+      "main_image_alt_text": "m&m Figure",
+      "gallery_images": [],
+      "source_url": "https://www.rbarbercreative.com/"
+    },
+    {
+      "project_id": "sphinx-series-of-sculptures",
+      "title": "Sphinx Series of Sculptures",
+      "slug": "sphinx-series-of-sculptures",
+      "category": "Sculptures & Fine Art",
+      "category_slug": "sculptures-fine-art",
+      "client": "Marc Quinn",
+      "description": "A large series of chased and finished bronze castings portraying Kate Moss. Sprayed 2 pac primer, and satin white and coral coloured paint, to a gallery standard.",
+      "main_image_url": "/assets/images/sphinx-series-of-sculptures-main.jpg",
+      "main_image_alt_text": "sphinx",
+      "gallery_images": [
+        {
+          "url": "/assets/images/sphinx-series-of-sculptures-gallery-1.jpg",
+          "alt_text": "Sphinxes"
+        },
+        {
+          "url": "/assets/images/sphinx-series-of-sculptures-gallery-2.jpg",
+          "alt_text": "sphinxes"
+        }
+      ],
+      "source_url": "https://www.rbarbercreative.com/"
+    }
+  ],
+  "homepage": {
+    "hero_image_url": "/assets/images/miniature-scaled-trojan-chicken-main.jpg",
+    "hero_image_alt_text": "Miniature scaled trojan chicken built for the IHOP Chicken advertising campaign",
+    "introductory_text": "Propmaker, modelmaker, and sculptor based in London — twenty years of building props, sculptures, and models for film, TV, theatre, advertising, and private commission."
+  },
+  "about_page": {
+    "title": "About Richard Barber",
+    "bio_paragraphs": [
+      "Richard Barber is a propmaker, modelmaker, and sculptor based in London, with over twenty years of experience across propmaking, sculpting, modelmaking, spraying, and product development, working to a gallery-standard level of finish.",
+      "His workshop skills span traditional and digital modelmaking, figurative and abstract sculpture, MIG/TIG/MMA welding, fibreglass and gesmonite mouldmaking, prototype casting, and 2-pac and cellulose spray finishing, alongside CG tools including ZBrush, Blender, and Photoshop.",
+      "Over his career he has worked with companies including Artem Ltd, MDM Props Ltd, 2D:3D Ltd, and Anarchy Ltd, producing props and sculpture for film, television, theatre, and advertising — including work on Harry Potter, Lord of the Rings, Game of Thrones, and The Royals — as well as sculpture series for major contemporary artists including Keith Tyson and Marc Quinn.",
+      "His work has also taken him internationally, including productions in Hungary and Crete."
+    ],
+    "profile_image_url": ""
+  },
+  "contact_page": {
+    "title": "Contact",
+    "introductory_text": "Richard is available for commissions and collaborations. Please get in touch to discuss your project.",
+    "email_address": "rbarber.creative@gmail.com",
+    "phone_number": "07960 914975",
+    "location": "120A Pitshanger Lane, London, W5 1QP"
+  },
+  "categories": [
+    {
+      "slug": "creatures-characters",
+      "name": "Creatures & Characters"
+    },
+    {
+      "slug": "props-weapons",
+      "name": "Props & Weapons"
+    },
+    {
+      "slug": "environments-scenics",
+      "name": "Environments & Scenics"
+    },
+    {
+      "slug": "sculptures-fine-art",
+      "name": "Sculptures & Fine Art"
+    },
+    {
+      "slug": "commercial-themed",
+      "name": "Commercial & Themed"
+    }
+  ],
+  "ui_ux_directives": {
+    "overall_vibe": "Modern, clean, professional, with a creative and artistic feel. Prioritize high-quality imagery and ample white space. The design must be fundamentally mobile-first.",
+    "layout": "Design for mobile single-column layouts first. On larger screens, adapt to a responsive grid system. Use a single-page application feel with smooth scrolling sections.",
+    "typography": {
+      "headings": "Use a modern, bold, sans-serif font like Poppins, Montserrat, or Bebas Neue for high impact.",
+      "body": "Use a highly readable, clean sans-serif font like Lato, Open Sans, or Roboto for descriptions and general text."
+    },
+    "color_palettes": {
+      "light_mode": {
+        "primary_background": "#FFFFFF",
+        "secondary_background": "#F8F9FA",
+        "accent_color": "#000000",
+        "primary_text": "#212529",
+        "secondary_text": "#6C757D"
+      },
+      "dark_mode": {
+        "primary_background": "#121212",
+        "secondary_background": "#1E1E1E",
+        "accent_color": "#BB86FC",
+        "primary_text": "#E1E1E1",
+        "secondary_text": "#A0A0A0"
+      }
+    },
+    "components": {
+      "navigation": "Mobile-first: A sticky header with a clean logo on the left and a hamburger menu icon on the right. The hamburger icon must expand into a full-screen overlay or slide-out menu containing navigation links and the dark/light mode toggle. On desktop, the hamburger menu is replaced by inline navigation links.",
+      "portfolio_grid": "Mobile-first: A single-column list of project cards. Each card should be a large, full-width image with the title and category text below it. On desktop, this transitions to a masonry or clean grid layout. Project cards should have a subtle zoom or overlay effect on hover.",
+      "buttons": "Use large, thumb-friendly buttons with a slight border radius for primary actions (e.g., 'View Project', 'Contact'). Use ghost/outline buttons for secondary actions.",
+      "footer": "Minimal and clean footer with social media links, copyright information, and a repeat of the contact email."
+    },
+    "interactions": {
+      "page_transitions": "Use subtle fade-in or slide-up animations as content enters the viewport on scroll.",
+      "hover_states": "All interactive elements (links, buttons, portfolio cards) must have clear and smooth hover states. On mobile, these should be replaced with clear tap states.",
+      "dark_mode_toggle": "A smooth transition effect when switching between light and dark modes."
+    }
+  }
+}

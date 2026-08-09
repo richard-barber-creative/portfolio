@@ -1,0 +1,254 @@
+.admin-body {
+  background-color: var(--color-bg-secondary);
+  min-height: 100vh;
+  font-family: var(--font-body);
+}
+
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background-color: var(--color-bg-primary);
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-md);
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.admin-sidebar__brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.admin-sidebar__tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.admin-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.admin-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  border-radius: 2px;
+}
+
+.admin-nav a:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.admin-nav a[aria-current="page"] {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.admin-main {
+  flex: 1;
+  padding: var(--space-lg);
+  max-width: 1100px;
+}
+
+@media (min-width: 900px) {
+  .admin-sidebar { display: flex; }
+  .admin-main { margin-left: 240px; padding: var(--space-xl); }
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.admin-header h2 { margin: 0; }
+.admin-header p { margin: 4px 0 0; }
+
+.admin-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+}
+
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.admin-login__card {
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  padding: var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.admin-login__header {
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-md);
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.field input,
+.field select,
+.field textarea {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: 12px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-text-primary);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-error {
+  color: #ba1a1a;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.admin-table th {
+  background-color: var(--color-bg-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+}
+
+.admin-table img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.admin-table-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 0;
+  margin-right: var(--space-sm);
+}
+
+.admin-table-actions button:hover {
+  color: var(--color-accent);
+}
+
+.admin-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.admin-status {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  font-size: 14px;
+  margin-bottom: var(--space-md);
+}
+
+.admin-status.is-error {
+  border-color: #ba1a1a;
+  color: #ba1a1a;
+}
+
+.admin-status.is-success {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.gallery-repeater {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.gallery-repeater__row {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.gallery-repeater__row input {
+  flex: 1;
+}

@@ -1,0 +1,32 @@
+---
+layout: default
+title: Portfolio
+---
+<section class="hero">
+  <img class="hero__image" src="{{ site.data.portfolio.homepage.hero_image_url | relative_url }}" alt="{{ site.data.portfolio.homepage.hero_image_alt_text }}">
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <h1>Richard Barber Creative</h1>
+    <p>{{ site.data.portfolio.homepage.introductory_text }}</p>
+  </div>
+</section>
+
+<div class="container section">
+  <div class="section__intro">
+    <h2>Featured Work</h2>
+    <p>A selection of props, sculptures, and models across theatre, film, and commercial work.</p>
+  </div>
+
+  <div class="category-pill-list">
+    <a class="category-pill is-active" href="{{ '/' | relative_url }}">All</a>
+    {% for cat in site.data.portfolio.categories %}
+    <a class="category-pill" href="{{ '/portfolio/category/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.name }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="portfolio-grid">
+    {% for project in site.data.portfolio.projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</div>

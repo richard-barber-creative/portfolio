@@ -1,0 +1,16 @@
+---
+layout: admin
+title: Admin
+permalink: /admin/
+---
+<script>
+  window.location.replace(RBCAdmin.isAuthed()
+    ? "{{ '/admin/dashboard/' | relative_url }}"
+    : "{{ '/admin/login/' | relative_url }}");
+</script>
+<noscript>
+  <p style="padding: var(--space-lg);">
+    JavaScript is required for the admin panel.
+    <a href="{{ '/admin/login/' | relative_url }}">Go to login</a>.
+  </p>
+</noscript>

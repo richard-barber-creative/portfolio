@@ -1,0 +1,47 @@
+// Color values below are sourced directly from
+// site.data.portfolio.ui_ux_directives.color_palettes in _data/portfolio.json.
+:root,
+[data-theme="light"] {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8F9FA;
+  --color-accent: #000000;
+  --color-text-primary: #212529;
+  --color-text-secondary: #6C757D;
+  --color-border: #E1E1E1;
+  --color-on-accent: #FFFFFF;
+  --color-overlay: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="dark"] {
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #1E1E1E;
+  --color-accent: #BB86FC;
+  --color-text-primary: #E1E1E1;
+  --color-text-secondary: #A0A0A0;
+  --color-border: #333333;
+  --color-on-accent: #121212;
+  --color-overlay: rgba(18, 18, 18, 0.85);
+}
+
+:root {
+  --font-heading: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Courier Prime", "Courier New", monospace;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --container-margin: 24px;
+  --container-max: 1440px;
+
+  --transition-fast: 150ms ease;
+  --transition-theme: 300ms ease;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-margin: 64px;
+  }
+}

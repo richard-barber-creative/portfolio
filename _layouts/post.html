@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="container project-hero">
+  <p class="eyebrow">{{ page.category }}</p>
+  <h1>{{ page.title }}</h1>
+
+  <dl class="project-meta">
+    <div class="project-meta__item">
+      <dt>Client</dt>
+      <dd>{{ page.client }}</dd>
+    </div>
+    <div class="project-meta__item">
+      <dt>Category</dt>
+      <dd>{{ page.category }}</dd>
+    </div>
+  </dl>
+
+  <img class="project-hero__image" src="{{ page.main_image_url | relative_url }}" alt="{{ page.main_image_alt_text }}" data-lightbox-index="{{ page._gallery_start }}">
+
+  <div class="project-description">
+    {{ content }}
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  </div>
+
+  {% if page.gallery_images and page.gallery_images.size > 0 %}
+  <h2>Gallery</h2>
+  <div class="project-gallery">
+    {% for image in page.gallery_images %}
+    <img src="{{ image.url | relative_url }}" alt="{{ image.alt_text }}" loading="lazy" data-lightbox-index="{{ page._gallery_start | plus: forloop.index }}">
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p style="margin-top: var(--space-xl);">
+    <a class="btn btn-ghost" href="{{ '/' | relative_url }}">&larr; Back to Portfolio</a>
+  </p>
+</article>

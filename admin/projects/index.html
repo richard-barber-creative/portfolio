@@ -1,0 +1,104 @@
+---
+layout: admin
+title: Manage Projects
+permalink: /admin/projects/
+---
+<div class="admin-shell">
+  {% include admin-sidebar.html active="projects" %}
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <h2>Projects</h2>
+        <p>Add, edit, or remove portfolio projects.</p>
+      </div>
+      <a class="btn btn-primary" href="{{ '/admin/projects/edit/' | relative_url }}">+ New Project</a>
+    </header>
+
+    <div id="status" class="admin-status" hidden></div>
+
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Category</th>
+            <th>Client</th>
+            <th style="text-align:right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="projects-body">
+          <tr><td colspan="4">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script>
+  RBCAdmin.requireAuth();
+
+  function showStatus(message, type) {
+    var el = document.getElementById("status");
+    el.textContent = message;
+    el.hidden = false;
+    el.className = "admin-status" + (type ? " is-" + type : "");
+  }
+
+  function escapeHtml(s) {
+    return (s || "").toString().replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  async function render() {
+    if (!RBCAdmin.GitHub.configured()) {
+      showStatus("You're not signed in. Redirecting to Sign In…", "error");
+      document.getElementById("projects-body").innerHTML = "";
+      return;
+    }
+    try {
+      var file = await RBCAdmin.GitHub.getJsonFile(RBCAdmin.PORTFOLIO_PATH);
+      var projects = file.data.projects || [];
+      var body = document.getElementById("projects-body");
+      if (!projects.length) {
+        body.innerHTML = '<tr><td colspan="4">No projects yet. Click "New Project" to add one.</td></tr>';
+        return;
+      }
+      body.innerHTML = projects.map(function (p) {
+        return "<tr>" +
+          '<td><div style="display:flex; align-items:center; gap:12px;">' +
+            '<img src="' + escapeHtml(p.main_image_url) + '" alt="">' +
+            "<strong>" + escapeHtml(p.title) + "</strong>" +
+          "</div></td>" +
+          "<td>" + escapeHtml(p.category) + "</td>" +
+          "<td>" + escapeHtml(p.client) + "</td>" +
+          '<td class="admin-table-actions" style="text-align:right;">' +
+            '<button onclick="editProject(\'' + escapeHtml(p.slug) + '\')">Edit</button>' +
+            '<button onclick="deleteProject(\'' + escapeHtml(p.slug) + '\')">Delete</button>' +
+          "</td>" +
+        "</tr>";
+      }).join("");
+    } catch (err) {
+      showStatus(err.message, "error");
+    }
+  }
+
+  function editProject(slug) {
+    window.location.href = "{{ '/admin/projects/edit/' | relative_url }}?slug=" + encodeURIComponent(slug);
+  }
+
+  async function deleteProject(slug) {
+    if (!confirm("Delete this project? This cannot be undone.")) return;
+    try {
+      var file = await RBCAdmin.GitHub.getJsonFile(RBCAdmin.PORTFOLIO_PATH);
+      file.data.projects = (file.data.projects || []).filter(function (p) { return p.slug !== slug; });
+      await RBCAdmin.GitHub.putJsonFile(RBCAdmin.PORTFOLIO_PATH, file.data, file.sha, "Delete project: " + slug);
+      showStatus("Project deleted. The live site will update in a minute or two.", "success");
+      render();
+    } catch (err) {
+      showStatus(err.message, "error");
+    }
+  }
+
+  render();
+</script>

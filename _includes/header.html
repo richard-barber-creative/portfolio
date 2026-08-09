@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a href="{{ '/' | relative_url }}" class="site-header__logo">Richard Barber Creative</a>
+
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Portfolio</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact' %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+
+    <div class="site-header__actions">
+      {% include theme-toggle.html %}
+      <button type="button" class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+    <a href="{{ '/' | relative_url }}">Portfolio</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
+  </nav>
+</header>

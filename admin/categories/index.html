@@ -1,0 +1,152 @@
+---
+layout: admin
+title: Manage Categories
+permalink: /admin/categories/
+---
+<div class="admin-shell">
+  {% include admin-sidebar.html active="categories" %}
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <h2>Categories</h2>
+        <p>Add or remove the categories projects can be sorted into.</p>
+      </div>
+    </header>
+
+    <div id="status" class="admin-status" hidden></div>
+
+    <div class="admin-card" style="margin-bottom: var(--space-lg);">
+      <h3>Add Category</h3>
+      <form id="add-category-form" style="display:flex; gap:var(--space-md); align-items:flex-end; flex-wrap:wrap;">
+        <div class="field" style="flex:1; min-width:200px; margin-bottom:0;">
+          <label for="new-category-name">Category Name</label>
+          <input type="text" id="new-category-name" required placeholder="e.g. Puppets & Animatronics">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Category</button>
+      </form>
+      <p id="form-error" class="form-error" role="alert"></p>
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Slug</th>
+            <th>Projects</th>
+            <th style="text-align:right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="categories-body">
+          <tr><td colspan="4">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script>
+  RBCAdmin.requireAuth();
+
+  var portfolioData = null;
+  var fileSha = null;
+
+  function showStatus(message, type) {
+    var el = document.getElementById("status");
+    el.textContent = message;
+    el.hidden = false;
+    el.className = "admin-status" + (type ? " is-" + type : "");
+  }
+
+  function escapeHtml(s) {
+    return (s || "").toString().replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function renderTable() {
+    var body = document.getElementById("categories-body");
+    var categories = portfolioData.categories || [];
+    var projects = portfolioData.projects || [];
+
+    if (!categories.length) {
+      body.innerHTML = '<tr><td colspan="4">No categories yet.</td></tr>';
+      return;
+    }
+
+    body.innerHTML = categories.map(function (c) {
+      var count = projects.filter(function (p) { return p.category_slug === c.slug; }).length;
+      return "<tr>" +
+        "<td>" + escapeHtml(c.name) + "</td>" +
+        "<td><code>" + escapeHtml(c.slug) + "</code></td>" +
+        "<td>" + count + "</td>" +
+        '<td class="admin-table-actions" style="text-align:right;">' +
+          '<button onclick="deleteCategory(\'' + escapeHtml(c.slug) + '\')">Delete</button>' +
+        "</td>" +
+      "</tr>";
+    }).join("");
+  }
+
+  async function init() {
+    if (!RBCAdmin.GitHub.configured()) {
+      showStatus("You're not signed in. Redirecting to Sign In…", "error");
+      document.getElementById("add-category-form").hidden = true;
+      return;
+    }
+    try {
+      var file = await RBCAdmin.GitHub.getJsonFile(RBCAdmin.PORTFOLIO_PATH);
+      portfolioData = file.data;
+      fileSha = file.sha;
+      renderTable();
+    } catch (err) {
+      showStatus(err.message, "error");
+    }
+  }
+
+  document.getElementById("add-category-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var errorEl = document.getElementById("form-error");
+    errorEl.textContent = "";
+
+    var name = document.getElementById("new-category-name").value.trim();
+    var slug = RBCAdmin.slugify(name);
+    if (!name || !slug) {
+      errorEl.textContent = "Please enter a category name.";
+      return;
+    }
+    portfolioData.categories = portfolioData.categories || [];
+    if (portfolioData.categories.some(function (c) { return c.slug === slug; })) {
+      errorEl.textContent = "A category with that name already exists.";
+      return;
+    }
+    portfolioData.categories.push({ slug: slug, name: name });
+
+    try {
+      await RBCAdmin.GitHub.putJsonFile(RBCAdmin.PORTFOLIO_PATH, portfolioData, fileSha, "Add category: " + name);
+      showStatus("Category added.", "success");
+      document.getElementById("new-category-name").value = "";
+      init();
+    } catch (err) {
+      errorEl.textContent = err.message;
+    }
+  });
+
+  async function deleteCategory(slug) {
+    var inUse = (portfolioData.projects || []).some(function (p) { return p.category_slug === slug; });
+    if (inUse && !confirm("Projects are still using this category. Delete it anyway? Those projects will keep their category label but the filter page will disappear.")) {
+      return;
+    }
+    if (!inUse && !confirm("Delete this category?")) return;
+
+    portfolioData.categories = (portfolioData.categories || []).filter(function (c) { return c.slug !== slug; });
+    try {
+      await RBCAdmin.GitHub.putJsonFile(RBCAdmin.PORTFOLIO_PATH, portfolioData, fileSha, "Delete category: " + slug);
+      showStatus("Category deleted.", "success");
+      init();
+    } catch (err) {
+      showStatus(err.message, "error");
+    }
+  }
+
+  init();
+</script>

@@ -1,0 +1,74 @@
+# ---------------------------------------------------------------------------
+# Site settings
+# ---------------------------------------------------------------------------
+title: Richard Barber Creative
+description: >-
+  Richard Barber Creative — professional propmaking, sculpture, and
+  modelmaking portfolio. Bespoke props and sculptures for theatre, film,
+  and TV, based in London, UK.
+author: Richard Barber
+email: richard@rbarbercreative.com
+lang: en
+
+url: "https://richardbarber.github.io" # the base hostname & protocol, e.g. https://username.github.io
+baseurl: "" # subpath e.g. "/rbarbercreative" — set this to your repository name
+             # if this site is published at username.github.io/REPO-NAME.
+             # Leave it as "" only if this repo IS named username.github.io.
+
+repository: "" # e.g. "yourusername/rbarbercreative" — used by the admin panel
+                # to know which GitHub repo to write changes to.
+
+# ---------------------------------------------------------------------------
+# Category taxonomy (task requirement: pre-populate these slugs even when
+# empty). The live/editable copy the site actually renders from lives in
+# _data/portfolio.json ("categories" key) so the admin CRUD tool has a
+# single JSON file to read and write. This list is the canonical default
+# used to (re)seed that file.
+# ---------------------------------------------------------------------------
+category_slugs:
+  - slug: creatures-characters
+    name: "Creatures & Characters"
+  - slug: props-weapons
+    name: "Props & Weapons"
+  - slug: environments-scenics
+    name: "Environments & Scenics"
+  - slug: sculptures-fine-art
+    name: "Sculptures & Fine Art"
+  - slug: commercial-themed
+    name: "Commercial & Themed"
+
+# ---------------------------------------------------------------------------
+# Build settings
+# ---------------------------------------------------------------------------
+markdown: kramdown
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  categories:
+    output: true
+    permalink: /portfolio/category/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - README.md
+  - DEPLOYMENT.md

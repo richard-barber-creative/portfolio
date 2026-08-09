@@ -1,0 +1,66 @@
+---
+layout: admin
+title: Admin Dashboard
+permalink: /admin/dashboard/
+---
+<div class="admin-shell">
+  {% include admin-sidebar.html active="dashboard" %}
+  <main class="admin-main">
+    <header class="admin-header">
+      <div>
+        <h2>Dashboard</h2>
+        <p>Overview of your portfolio content.</p>
+      </div>
+    </header>
+
+    <div id="status" class="admin-status" hidden></div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-xl);">
+      <div class="admin-card">
+        <p class="eyebrow" style="margin-bottom:8px;">Total Projects</p>
+        <p style="font-family:var(--font-heading); font-size:40px; font-weight:700; margin:0;" id="stat-projects">–</p>
+      </div>
+      <div class="admin-card">
+        <p class="eyebrow" style="margin-bottom:8px;">Categories</p>
+        <p style="font-family:var(--font-heading); font-size:40px; font-weight:700; margin:0;" id="stat-categories">–</p>
+      </div>
+      <div class="admin-card">
+        <p class="eyebrow" style="margin-bottom:8px;">Connected Repository</p>
+        <p style="font-size:16px; font-weight:700; margin:0;" id="stat-connection">–</p>
+      </div>
+    </div>
+
+    <div class="admin-card">
+      <h3>Connection</h3>
+      <p>Signed in to <strong id="repo-name"></strong> on branch <strong id="branch-name"></strong>.</p>
+      <p style="font-size:13px;">Your token is stored only in this browser. Use "Sign out" if you're on a shared or public computer.</p>
+      <button type="button" class="btn btn-ghost" onclick="RBCAdmin.logout()">Sign Out</button>
+    </div>
+  </main>
+</div>
+
+<script>
+  RBCAdmin.requireAuth();
+
+  function showStatus(message, type) {
+    var el = document.getElementById("status");
+    el.textContent = message;
+    el.hidden = false;
+    el.className = "admin-status" + (type ? " is-" + type : "");
+  }
+
+  document.getElementById("repo-name").textContent = RBCAdmin.GitHub.repo;
+  document.getElementById("branch-name").textContent = RBCAdmin.GitHub.branch;
+  document.getElementById("stat-connection").textContent = RBCAdmin.GitHub.repo;
+
+  async function loadStats() {
+    try {
+      var file = await RBCAdmin.GitHub.getJsonFile(RBCAdmin.PORTFOLIO_PATH);
+      document.getElementById("stat-projects").textContent = (file.data.projects || []).length;
+      document.getElementById("stat-categories").textContent = (file.data.categories || []).length;
+    } catch (err) {
+      showStatus(err.message, "error");
+    }
+  }
+  loadStats();
+</script>

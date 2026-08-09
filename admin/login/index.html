@@ -1,0 +1,97 @@
+---
+layout: admin
+title: Admin Sign In
+permalink: /admin/login/
+---
+<div class="admin-login">
+  <div class="admin-login__card">
+    <div class="admin-login__header">
+      <h1 style="margin-bottom:4px;">Richard Barber Creative</h1>
+      <p style="margin:0;">Admin sign in</p>
+    </div>
+
+    <p style="font-size:14px;">
+      This site has no separate admin password — signing in with a GitHub
+      access token <em>is</em> the login, and it's also what lets you save
+      changes. There's no app to install or account to set up beyond your
+      existing GitHub account.
+    </p>
+
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="repo">Repository (format: your-username/your-repo-name)</label>
+        <input type="text" id="repo" required placeholder="yourusername/rbarbercreative">
+      </div>
+
+      <div class="field">
+        <label>Step 1: Get an access token</label>
+        <a class="btn btn-ghost" id="get-token-link" href="#" target="_blank" rel="noopener" style="width:100%; text-align:center; box-sizing:border-box;">
+          Open GitHub to create my token &rarr;
+        </a>
+        <p style="font-size:13px; margin-top:8px; margin-bottom:0;">
+          This opens a GitHub page with everything already filled in. Just scroll to
+          the bottom and click the green <strong>Generate token</strong> button, then
+          copy the token it shows you (you'll only see it once) and paste it below.
+        </p>
+      </div>
+
+      <div class="field">
+        <label for="token">Step 2: Paste your token here</label>
+        <input type="password" id="token" autocomplete="off" required placeholder="ghp_...">
+      </div>
+
+      <details style="margin-bottom: var(--space-md);">
+        <summary style="cursor:pointer; font-size:13px; color: var(--color-text-secondary);">Advanced: change branch</summary>
+        <div class="field" style="margin-top: var(--space-sm);">
+          <label for="branch">Branch</label>
+          <input type="text" id="branch" placeholder="master" value="master">
+        </div>
+      </details>
+
+      <p id="login-error" class="form-error" role="alert"></p>
+      <button type="submit" class="btn btn-primary" style="width:100%;" id="login-submit">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  var repoInput = document.getElementById("repo");
+  var branchInput = document.getElementById("branch");
+  var tokenInput = document.getElementById("token");
+  var getTokenLink = document.getElementById("get-token-link");
+
+  repoInput.value = RBCAdmin.GitHub.repo;
+  if (RBCAdmin.GitHub.branch) branchInput.value = RBCAdmin.GitHub.branch;
+
+  function updateTokenLink() {
+    var repoName = repoInput.value.trim() || "my portfolio site";
+    var description = "Portfolio Admin (" + repoName + ")";
+    getTokenLink.href = "https://github.com/settings/tokens/new?description="
+      + encodeURIComponent(description) + "&scopes=repo";
+  }
+  updateTokenLink();
+  repoInput.addEventListener("input", updateTokenLink);
+
+  document.getElementById("login-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var errorEl = document.getElementById("login-error");
+    var submitBtn = document.getElementById("login-submit");
+    errorEl.textContent = "";
+
+    RBCAdmin.GitHub.repo = repoInput.value;
+    RBCAdmin.GitHub.branch = branchInput.value || "master";
+    RBCAdmin.GitHub.token = tokenInput.value;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Checking…";
+    try {
+      await RBCAdmin.GitHub.verifyAccess();
+      window.location.href = "{{ '/admin/dashboard/' | relative_url }}";
+    } catch (err) {
+      errorEl.textContent = err.message;
+      RBCAdmin.GitHub.disconnect();
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Sign In";
+    }
+  });
+</script>

@@ -1,0 +1,16 @@
+{% comment %} Usage: {% include admin-sidebar.html active="dashboard" %} {% endcomment %}
+<nav class="admin-sidebar" aria-label="Admin">
+  <div>
+    <div class="admin-sidebar__brand">Admin Panel</div>
+    <div class="admin-sidebar__tag">Richard Barber Creative CMS</div>
+  </div>
+  <ul class="admin-nav">
+    <li><a href="{{ '/admin/dashboard/' | relative_url }}" {% if include.active == 'dashboard' %}aria-current="page"{% endif %}>Dashboard</a></li>
+    <li><a href="{{ '/admin/projects/' | relative_url }}" {% if include.active == 'projects' %}aria-current="page"{% endif %}>Projects</a></li>
+    <li><a href="{{ '/admin/categories/' | relative_url }}" {% if include.active == 'categories' %}aria-current="page"{% endif %}>Categories</a></li>
+  </ul>
+  <div>
+    {% include theme-toggle.html %}
+    <button type="button" class="btn btn-ghost" style="width:100%; margin-top: var(--space-md);" onclick="RBCAdmin.logout()">Log out</button>
+  </div>
+</nav>
