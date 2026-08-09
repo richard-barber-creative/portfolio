@@ -15,10 +15,16 @@
       </button>
     </div>
   </div>
-
-  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
-    <a href="{{ '/' | relative_url }}">Portfolio</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>
-  </nav>
 </header>
+
+<!--
+  Deliberately NOT nested inside <header>: that element has
+  backdrop-filter, which creates a new containing block for fixed-position
+  descendants. A position:fixed .mobile-menu inside it would be sized
+  relative to the header bar instead of the viewport.
+-->
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+  <a href="{{ '/' | relative_url }}">Portfolio</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+  <a href="{{ '/contact/' | relative_url }}">Contact</a>
+</nav>

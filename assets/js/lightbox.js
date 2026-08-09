@@ -63,7 +63,7 @@
       btn.setAttribute("data-lightbox-index", i);
       btn.setAttribute("aria-label", "Show photo " + (i - range.start + 1) + " of " + range.count);
       var img = document.createElement("img");
-      img.src = withBase(item.src);
+      img.src = withBase(item.src.replace(/\.jpg$/, "-thumb.jpg"));
       img.alt = "";
       img.loading = "lazy";
       btn.appendChild(img);

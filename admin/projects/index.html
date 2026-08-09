@@ -44,6 +44,11 @@ permalink: /admin/projects/
     el.className = "admin-status" + (type ? " is-" + type : "");
   }
 
+  function withBase(path) {
+    if (!path) return path;
+    return (window.RBC_BASEURL || "") + path;
+  }
+
   function escapeHtml(s) {
     return (s || "").toString().replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -67,7 +72,7 @@ permalink: /admin/projects/
       body.innerHTML = projects.map(function (p) {
         return "<tr>" +
           '<td><div style="display:flex; align-items:center; gap:12px;">' +
-            '<img src="' + escapeHtml(p.main_image_url) + '" alt="">' +
+            '<img src="' + escapeHtml(withBase((p.main_image_url || "").replace(/\.jpg$/, "-thumb.jpg"))) + '" alt="" loading="lazy">' +
             "<strong>" + escapeHtml(p.title) + "</strong>" +
           "</div></td>" +
           "<td>" + escapeHtml(p.category) + "</td>" +

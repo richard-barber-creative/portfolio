@@ -24,6 +24,52 @@ jobs:
         run: echo "url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Any .jpg added or changed under assets/images/ in this push gets
+      # losslessly re-encoded (strips EXIF/metadata, no pixel/quality
+      # change) and gets a small -thumb.jpg generated for it if missing,
+      # so grid/list views never have to load full-resolution originals.
+      # Committing back uses GITHUB_TOKEN, which GitHub does not treat as
+      # a trigger for further workflow runs, so this can't loop.
+      - name: Optimize new or changed images
+        id: optimize
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libjpeg-turbo-progs imagemagick > /dev/null
+
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE=$(git rev-list --max-parents=0 HEAD)
+          fi
+
+          CHANGED=$(git diff --name-only --diff-filter=ACM "$BEFORE" HEAD -- 'assets/images/*.jpg' | grep -v -- '-thumb\.jpg$' || true)
+
+          if [ -z "$CHANGED" ]; then
+            echo "No new or changed source images."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "$CHANGED" | while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            echo "Optimizing $f"
+            jpegtran -copy none -optimize -progressive "$f" > "$f.opt" && mv "$f.opt" "$f"
+            thumb="${f%.jpg}-thumb.jpg"
+            if [ ! -f "$thumb" ]; then
+              echo "Generating $thumb"
+              convert "$f" -resize "480x480>" -strip -quality 78 -sampling-factor 4:2:0 -interlace Plane "$thumb"
+            fi
+          done
+
+          git add assets/images/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -42,6 +88,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
+
+      # Persist the optimized images back to master so local dev and the
+      # next run both see them, not just this deployed _site output.
+      - name: Commit optimized images back to master
+        if: steps.optimize.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: auto-optimize images (strip metadata, generate thumbnails)"
+          git push origin HEAD:master || echo "Push skipped (branch moved); will retry on next push."
 
       - name: Print site URL
         run: |

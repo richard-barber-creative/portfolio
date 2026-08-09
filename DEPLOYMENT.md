@@ -113,6 +113,13 @@ The Admin panel doesn't upload images directly. To add a new photo:
    GitHub's web interface: open the folder on GitHub → **Add file → Upload files**).
 2. In the project form, set the image path to `/assets/images/your-file-name.jpg`.
 
+You don't need to resize or compress it yourself first — every push
+automatically strips hidden metadata (camera info, GPS, etc.) from any new
+`.jpg` under `assets/images/` and generates a small preview version used
+in grids and the admin list, without touching the full-quality version
+used on the actual project page. This runs as part of the same GitHub
+Actions workflow that publishes the site, so there's nothing extra to do.
+
 ## Troubleshooting
 
 - **"Connected" fails with a 404** — double check the repository name is
