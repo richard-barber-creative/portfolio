@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/portfolio/assets/css/main.css?v=1786289790">
+<link rel="stylesheet" href="/portfolio/assets/css/main.css?v=1786291388">
 <link rel="icon" href="data:,">
 
 <!-- Begin Jekyll SEO tag v2.9.0 -->
@@ -69,13 +69,19 @@
       </button>
     </div>
   </div>
-
-  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/portfolio/about/">About</a>
-    <a href="/portfolio/contact/">Contact</a>
-  </nav>
 </header>
+
+<!--
+  Deliberately NOT nested inside <header>: that element has
+  backdrop-filter, which creates a new containing block for fixed-position
+  descendants. A position:fixed .mobile-menu inside it would be sized
+  relative to the header bar instead of the viewport.
+-->
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+  <a href="/portfolio/">Portfolio</a>
+  <a href="/portfolio/about/">About</a>
+  <a href="/portfolio/contact/">Contact</a>
+</nav>
 
   <main>
     <article class="container project-hero">
@@ -155,8 +161,8 @@
 </div>
 
 
-  <script src="/portfolio/assets/js/theme-toggle.js?v=1786289790"></script>
-  <script src="/portfolio/assets/js/main.js?v=1786289790"></script>
-  <script src="/portfolio/assets/js/lightbox.js?v=1786289790"></script>
+  <script src="/portfolio/assets/js/theme-toggle.js?v=1786291388"></script>
+  <script src="/portfolio/assets/js/main.js?v=1786291388"></script>
+  <script src="/portfolio/assets/js/lightbox.js?v=1786291388"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/portfolio/assets/css/main.css?v=1786289790">
+<link rel="stylesheet" href="/portfolio/assets/css/main.css?v=1786291388">
 <link rel="icon" href="data:,">
 
 <!-- Begin Jekyll SEO tag v2.9.0 -->
@@ -26,12 +26,12 @@
 <meta property="og:url" content="https://richard-barber-creative.github.io/portfolio/work/category/commercial-themed/" />
 <meta property="og:site_name" content="Richard Barber Creative" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-08-09T15:36:30+00:00" />
-<meta property="article:modified_time" content="2026-08-09T15:36:30+00:00" />
+<meta property="article:published_time" content="2026-08-09T16:03:08+00:00" />
+<meta property="article:modified_time" content="2026-08-09T16:03:08+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Commercial Themed" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Richard Barber"},"dateModified":"2026-08-09T15:36:30+00:00","datePublished":"2026-08-09T15:36:30+00:00","description":"Themed builds and mascots created for commercial clients and branded locations.","headline":"Commercial Themed","mainEntityOfPage":{"@type":"WebPage","@id":"https://richard-barber-creative.github.io/portfolio/work/category/commercial-themed/"},"url":"https://richard-barber-creative.github.io/portfolio/work/category/commercial-themed/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Richard Barber"},"dateModified":"2026-08-09T16:03:08+00:00","datePublished":"2026-08-09T16:03:08+00:00","description":"Themed builds and mascots created for commercial clients and branded locations.","headline":"Commercial Themed","mainEntityOfPage":{"@type":"WebPage","@id":"https://richard-barber-creative.github.io/portfolio/work/category/commercial-themed/"},"url":"https://richard-barber-creative.github.io/portfolio/work/category/commercial-themed/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -71,13 +71,19 @@
       </button>
     </div>
   </div>
-
-  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/portfolio/about/">About</a>
-    <a href="/portfolio/contact/">Contact</a>
-  </nav>
 </header>
+
+<!--
+  Deliberately NOT nested inside <header>: that element has
+  backdrop-filter, which creates a new containing block for fixed-position
+  descendants. A position:fixed .mobile-menu inside it would be sized
+  relative to the header bar instead of the viewport.
+-->
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+  <a href="/portfolio/">Portfolio</a>
+  <a href="/portfolio/about/">About</a>
+  <a href="/portfolio/contact/">Contact</a>
+</nav>
 
   <main>
     <div class="container section project-hero">
@@ -107,7 +113,7 @@
       
 <a href="/portfolio/work/giant-gold-coin/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/giant-gold-coin-main.jpg" alt="Barbican Gold Coin" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/giant-gold-coin-main-thumb.jpg" alt="Barbican Gold Coin" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Giant Gold Coin</h3>
@@ -119,7 +125,7 @@
       
 <a href="/portfolio/work/aldi-big-top/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/aldi-big-top-main.jpg" alt="Aldi Big Top Interior" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/aldi-big-top-main-thumb.jpg" alt="Aldi Big Top Interior" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Aldi Big Top</h3>
@@ -131,7 +137,7 @@
       
 <a href="/portfolio/work/giant-wax-coin/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/giant-wax-coin-main.jpg" alt="Barbican Wax Coin" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/giant-wax-coin-main-thumb.jpg" alt="Barbican Wax Coin" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Giant Wax Coin</h3>
@@ -143,7 +149,7 @@
       
 <a href="/portfolio/work/bart-surf-bath-plug-float/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/bart-surf-bath-plug-float-main.jpg" alt="Bart Surf Bath-Plug Float" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/bart-surf-bath-plug-float-main-thumb.jpg" alt="Bart Surf Bath-Plug Float" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Bart Surf Sculpt</h3>
@@ -155,7 +161,7 @@
       
 <a href="/portfolio/work/hotwheels-cars/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/hotwheels-cars-main.jpg" alt="Blue HotWheels Car" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/hotwheels-cars-main-thumb.jpg" alt="Blue HotWheels Car" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Hotwheels Cars</h3>
@@ -167,7 +173,7 @@
       
 <a href="/portfolio/work/dire-wolf-brooch/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/dire-wolf-brooch-main.jpg" alt="Dire-Wolf Brooch" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/dire-wolf-brooch-main-thumb.jpg" alt="Dire-Wolf Brooch" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Dire-Wolf brooch</h3>
@@ -179,7 +185,7 @@
       
 <a href="/portfolio/work/miniature-scaled-trojan-chicken/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/miniature-scaled-trojan-chicken-main.jpg" alt="IHop Chicken (On Location)" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/miniature-scaled-trojan-chicken-main-thumb.jpg" alt="IHop Chicken (On Location)" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Miniature Scaled Trojan Chicken</h3>
@@ -191,7 +197,7 @@
       
 <a href="/portfolio/work/monster-wrestlers-hinged-collectors-box/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/monster-wrestlers-hinged-collectors-box-main.jpg" alt="Monster Wrestlers" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/monster-wrestlers-hinged-collectors-box-main-thumb.jpg" alt="Monster Wrestlers" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Monster Wrestlers Hinged Collectors Box</h3>
@@ -203,7 +209,7 @@
       
 <a href="/portfolio/work/noddy-and-big-ears-in-their-vehicles/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/noddy-and-big-ears-in-their-vehicles-main.jpg" alt="Noddy And Bigears" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/noddy-and-big-ears-in-their-vehicles-main-thumb.jpg" alt="Noddy And Bigears" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Noddy and Big Ears in their vehicles</h3>
@@ -215,7 +221,7 @@
       
 <a href="/portfolio/work/noddy-and-car/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/noddy-and-car-main.jpg" alt="Noddy Car" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/noddy-and-car-main-thumb.jpg" alt="Noddy Car" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Noddy and Car</h3>
@@ -227,7 +233,7 @@
       
 <a href="/portfolio/work/policeman-criminal-and-police-car/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/policeman-criminal-and-police-car-main.jpg" alt="Policeman and Criminal" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/policeman-criminal-and-police-car-main-thumb.jpg" alt="Policeman and Criminal" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Policeman, Criminal and Police Car</h3>
@@ -239,7 +245,7 @@
       
 <a href="/portfolio/work/sindy-doll-s-swan-carriage/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/sindy-doll-s-swan-carriage-main.jpg" alt="Sindy's Swan Carriage" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/sindy-doll-s-swan-carriage-main-thumb.jpg" alt="Sindy's Swan Carriage" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Sindy Doll’s Swan Carriage</h3>
@@ -251,7 +257,7 @@
       
 <a href="/portfolio/work/cake-engine/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/cake-engine-main.jpg" alt="Skoda Cake Engine" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/cake-engine-main-thumb.jpg" alt="Skoda Cake Engine" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Cake Engine</h3>
@@ -263,7 +269,7 @@
       
 <a href="/portfolio/work/overdrive-machine/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/overdrive-machine-main.jpg" alt="Sky Vegas Overdrive" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/overdrive-machine-main-thumb.jpg" alt="Sky Vegas Overdrive" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Overdrive Machine</h3>
@@ -275,7 +281,7 @@
       
 <a href="/portfolio/work/teeny-weeny-chapel-playset/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/teeny-weeny-chapel-playset-main.jpg" alt="Teeny Weenies chapel" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/teeny-weeny-chapel-playset-main-thumb.jpg" alt="Teeny Weenies chapel" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Teeny Weeny Chapel Playset</h3>
@@ -287,7 +293,7 @@
       
 <a href="/portfolio/work/the-grinch-whoville-town-hall-play-set/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/the-grinch-whoville-town-hall-play-set-main.jpg" alt="The Grinch Collectibles" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/the-grinch-whoville-town-hall-play-set-main-thumb.jpg" alt="The Grinch Collectibles" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">The Grinch Whoville Town Hall Play Set</h3>
@@ -299,7 +305,7 @@
       
 <a href="/portfolio/work/stop-sign-machine/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/stop-sign-machine-main.jpg" alt="Virgin Trains Stop Sign" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/stop-sign-machine-main-thumb.jpg" alt="Virgin Trains Stop Sign" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Stop-Sign Machine</h3>
@@ -311,7 +317,7 @@
       
 <a href="/portfolio/work/ars-ne-wenger-bobbing-head-toy/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/ars-ne-wenger-bobbing-head-toy-main.jpg" alt="Wenger Bobbing Head" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/ars-ne-wenger-bobbing-head-toy-main-thumb.jpg" alt="Wenger Bobbing Head" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Arsène Wenger Bobbing-Head Toy</h3>
@@ -323,7 +329,7 @@
       
 <a href="/portfolio/work/mini-footballer-head-and-body/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/mini-footballer-head-and-body-main.jpg" alt="footballer head" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/mini-footballer-head-and-body-main-thumb.jpg" alt="footballer head" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Mini-Footballer Head and Body</h3>
@@ -335,7 +341,7 @@
       
 <a href="/portfolio/work/scaled-m-m-figure-sign/" class="project-card reveal">
   <div class="project-card__image-wrap">
-    <img class="project-card__image" src="/portfolio/assets/images/scaled-m-m-figure-sign-main.jpg" alt="m&m Figure" loading="lazy">
+    <img class="project-card__image" src="/portfolio/assets/images/scaled-m-m-figure-sign-main-thumb.jpg" alt="m&m Figure" loading="lazy">
   </div>
   <div class="project-card__meta">
     <h3 class="project-card__title">Scaled m&m Figure Sign</h3>
@@ -385,8 +391,8 @@
 </div>
 
 
-  <script src="/portfolio/assets/js/theme-toggle.js?v=1786289790"></script>
-  <script src="/portfolio/assets/js/main.js?v=1786289790"></script>
-  <script src="/portfolio/assets/js/lightbox.js?v=1786289790"></script>
+  <script src="/portfolio/assets/js/theme-toggle.js?v=1786291388"></script>
+  <script src="/portfolio/assets/js/main.js?v=1786291388"></script>
+  <script src="/portfolio/assets/js/lightbox.js?v=1786291388"></script>
 </body>
 </html>
