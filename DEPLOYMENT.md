@@ -51,9 +51,18 @@ From now on, any time you push a change to the `master` branch (or save somethin
 through the Admin panel — see below), the site rebuilds and updates
 automatically. You never need to run any build commands yourself.
 
+**This project is already using a custom domain.** The live site is at
+**https://rbarbercreative.com** — not the `github.io` address described
+above. That's set up via the `CNAME` file at the repo root and the `url`/
+`baseurl` values in `_config.yml`; if you ever change domains, update
+both of those together (see the README's custom-domain section for the
+DNS side of it). Don't delete the `CNAME` file — without it, GitHub Pages
+falls back to serving from the plain `github.io` address and the custom
+domain stops working after the next deploy.
+
 ## Part 4 — Using the Admin panel to edit your portfolio
 
-Visit `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/admin/` to sign in.
+Visit `https://rbarbercreative.com/admin/` to sign in.
 
 **There is no separate admin password to remember or keep secret.** This
 site is a public GitHub repository, so anything checked into it (including
@@ -67,7 +76,7 @@ of clicks, no app to install.
 
 ### Signing in (every time, or whenever your token expires)
 
-1. Go to `https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/admin/`.
+1. Go to `https://rbarbercreative.com/admin/`.
 2. Type your repository name into the **Repository** field, e.g.
    `YOUR-USERNAME/YOUR-REPO-NAME`.
 3. Click **Open GitHub to create my token →**. This opens a GitHub page in

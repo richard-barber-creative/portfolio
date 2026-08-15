@@ -10,12 +10,15 @@ author: Richard Barber
 email: rbarber.creative@gmail.com
 lang: en
 
-url: "https://richard-barber-creative.github.io" # the base hostname & protocol
-baseurl: "/portfolio" # subpath — this site is published at
-                       # richard-barber-creative.github.io/portfolio
+url: "https://rbarbercreative.com" # custom domain (see /CNAME) — the site
+                                    # now serves from the domain root, not
+                                    # from a /portfolio subpath
+baseurl: ""
 
 repository: "richard-barber-creative/portfolio" # used by the admin panel
-                # to know which GitHub repo to write changes to.
+                # to know which GitHub repo to write changes to. This is
+                # unrelated to the custom domain above -- the repo name
+                # stays "portfolio" regardless of what domain serves it.
 
 # ---------------------------------------------------------------------------
 # Category taxonomy (task requirement: pre-populate these slugs even when

@@ -19,13 +19,24 @@ jobs:
       name: github-pages
       url: ${{ steps.site-url.outputs.url }}
     steps:
-      - name: Compute site URL
-        id: site-url
-        run: echo "url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # Reads url/baseurl straight from _config.yml (falling back to the
+      # default github.io/<repo> pattern) rather than guessing, so this
+      # stays correct whether the site is on a custom domain or not.
+      - name: Compute site URL
+        id: site-url
+        run: |
+          SITE_URL=$(grep -m1 '^url:' _config.yml | sed -E 's/^url:[[:space:]]*"?([^"#]*)"?.*/\1/' | xargs)
+          BASEURL=$(grep -m1 '^baseurl:' _config.yml | sed -E 's/^baseurl:[[:space:]]*"?([^"#]*)"?.*/\1/' | xargs)
+          if [ -z "$SITE_URL" ]; then
+            SITE_URL="https://${{ github.repository_owner }}.github.io"
+            BASEURL="/${{ github.event.repository.name }}"
+          fi
+          echo "url=${SITE_URL}${BASEURL}/" >> "$GITHUB_OUTPUT"
 
       # Any .jpg added or changed under assets/images/ in this push gets
       # losslessly re-encoded (strips EXIF/metadata, no pixel/quality
